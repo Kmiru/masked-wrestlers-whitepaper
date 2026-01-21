@@ -24,7 +24,7 @@ Ring Gear is separate equipment parts:
 
 - **Boots** (movement / dash control)
 - **Tights** (mobility tradeoffs, stamina efficiency)
-- **Shirt** (defense / guard tuning)
+- **Top** (defense / guard tuning)
 - **Cape** (situational movement tools with strong counterplay)
 
 Ring Gear is designed to be non-NFT by default. If any part becomes tokenized later, it must still obey the same caps and anti-exploit locks.
