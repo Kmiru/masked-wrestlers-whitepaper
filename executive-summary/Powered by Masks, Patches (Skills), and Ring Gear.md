@@ -1,4 +1,4 @@
-# Powered by Masks, Mask Accessories, and Ring Gear
+# Powered by Masks, Mask Accessories (Skills), and Ring Gear
 
 Your identity in Masked Wrestlers is built like a real persona — modular, expressive, and earned.
 
@@ -15,7 +15,7 @@ It defines your tier and the structure of your customization options.
 
 ---
 
-## Mask Accessories (your style knobs)
+## Mask Accessories (skills/modifiers)
 Accessories let you shape how your fighter feels:
 - Trait slot (style tuning)
 - Moves slot (kit expression)
