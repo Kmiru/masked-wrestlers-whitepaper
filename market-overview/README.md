@@ -4,8 +4,8 @@ Masked Wrestlers is a **skill-first competitive fighting game** where **your han
 
 It combines the intensity of competitive PvP with the culture of masked personas, letting you build a fighter identity through:
 - **Masks** (your core persona)
-- **Mask Accessories** (slot-based customization)
-- **Ring Gear** (boots, tights, shirt, cape)
+- **Mask Accessories** (skills/modifiers)
+- **Ring Gear** (boots, tights, top, cape)
 
 
 ---
@@ -39,8 +39,8 @@ Your Mask isn’t just a skin — it’s a persona. Over time, you can craft a s
 ### Customize
 Your loadout is built from:
 1) **1 Mask**
-2) optional **Mask Accessories** (Trait / Moves / Power slots)
-3) optional **Ring Gear** (boots / tights / top / cape)
+2) **Mask Accessories** (skills/modifiers)
+3) **Ring Gear** (boots / tights / top / cape)
 
 
 ---
