@@ -1,10 +1,11 @@
 # The Masked Wrestlers ecosystem
 
-The ecosystem has three layers:
+This section explains how everything connects:
+- your Mask identity
+- your Patch skills
+- your Ring Gear signature
+- your progression (Level 1–1000)
+- the market loop (trade, collect, curate)
+- the integrity systems that keep ranked legitimate
 
-1. **The game** (client + servers) where matches happen.
-2. **Assets** (Masks, Mask Accessories, optional tradables) that power expression and builds.
-3. **Community rails** (ranked rules, tournaments, and seasonal updates).
-
-
-If you want the technical details, see: [Smart contract architecture](smart-contract-architecture.md).
+This is the blueprint for how players build legends.
