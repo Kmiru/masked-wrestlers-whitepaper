@@ -1,22 +1,33 @@
 # Tomorrow: the future of Masked Wrestlers
 
-Masked Wrestlers is built to scale without breaking competition.
+Masked Wrestlers is built to grow into a long-term competitive ecosystem — one where gameplay stays skill-first, and identity culture keeps evolving.
 
-## Seasons without power creep
+---
 
-We introduce new Mask Accessories and cosmetics in seasons, while keeping power bounded by:
+## What growth looks like 
+### A stronger competitive loop
+- better ladders and matchmaking as the community grows
+- events and tournament formats as the scene develops
+- seasonal goals that reward consistency
 
-- tier restrictions,
-- slot limits,
-- level gates,
-- caps and tradeoffs.
+### A living identity culture
+- new themes and cosmetic drops
+- new accessories designed with caps/tradeoffs
+- community moments that make items meaningful
 
-## Community-first growth
+### Ownership that supports players
+If you choose NFTs:
+- ownership stays about identity and flexibility
+- the market helps you curate your loadout
+- competitive integrity stays protected
 
-- Free-to-play access for new players (no NFT required to learn and compete).
-- Creator-friendly assets and lore: masks, factions, arenas, rivalries.
-- Tournaments and ranked seasons.
+---
 
-## The long-term vision
+## The long-term promise
+- skill stays the ceiling
+- ranked stays legitimate
+- identity stays deep
+- seasons keep the world fresh
 
-A living lucha universe where identity is collectible, gameplay is skillful, and progression is earned—not bought.
+If you’re looking for a fighting game you can grind for years — where your persona grows with your mastery — this is the path.
+
