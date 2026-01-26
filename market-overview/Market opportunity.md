@@ -111,13 +111,13 @@ If you’re a new player:
 If you want the NFT route:
 - Pick a Mask that matches your long-term identity
 - Use the market to get the items that fit your playstyle
-- Treat accessories as **options**, not power—then win with skill
+- Treat accessories as modifiers, not power—then win with skill
 
 ---
 
 ## Your bottom line
 The “opportunity” is simple:
 - Your skill and time always matter first
-- NFTs (optional) add ownership + flexibility + identity
+- NFTs add ownership + flexibility + identity + skills + modifiers
 - The market helps you optimize your build path without breaking fairness
 
