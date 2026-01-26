@@ -33,7 +33,7 @@ In Masked Wrestlers, your fighter isn’t just a character pick — it’s a per
 ### Customize
 Build your loadout from:
 1) **1 Mask**
-2) **Mask Accessories** (Trait / Moves / Power slots)
+2) **Mask Accessories** (skills/modifiers)
 3) **Ring Gear** (boots / tights / top / cape)
 
 ---
