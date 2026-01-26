@@ -1,12 +1,33 @@
-# Optional utility token
+# Utility token (if/when introduced)
 
-A utility token is **optional**. If introduced, it must serve gameplay and community, not speculation.
+If a utility token is introduced, it must serve the game—not replace it.
 
-Possible utilities (examples):
+The only acceptable purpose is to support:
+- events and tournaments
+- community growth
+- long-term ecosystem sustainability
 
-- tournament entry fees and prize pools,
-- crafting / reroll sinks for cosmetic variants,
-- seasonal battle-pass-like systems (strictly cosmetic or option-expanding within caps),
-- community voting on cosmetic themes (non-governance-critical).
+And it must follow one rule above all:
+**it can never compromise competitive integrity.**
 
-If a token is introduced, its parameters (supply, distribution, vesting) will be published transparently and audited.
+---
+
+## Player-first principles
+
+### 1) Skill stays the ceiling
+No token mechanic should translate into “buy wins.”
+
+### 2) The ladder stays legitimate
+No token feature should bypass:
+- tier/slot rules
+- progression gates
+- caps/tradeoffs/counterplay
+
+### 3) Clarity over complexity
+Players should instantly understand:
+- what it’s used for
+- why it exists
+- how it benefits the ecosystem
+
+If a token can’t meet these principles, it doesn’t belong.
+
