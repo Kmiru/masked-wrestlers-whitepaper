@@ -46,7 +46,7 @@ Your persona becomes persistent:
 Your equipped items form your loadout:
 1) **1 Mask NFT** (Common / Rare / Legendary)
 2) **Mask Accessories** (slot-based: Trait / Moves / Power)
-3) **Ring Gear** (boots / tights / shirt / cape)
+3) **Ring Gear** (boots / tights / top / cape)
 
 This lets you customize within a system that protects fairness:
 - tier rules
