@@ -1,11 +1,11 @@
 # Table of contents
 
-1. [Executive summary](executive-summary/README.md)
+[Executive summary](executive-summary/README.md)
    - [Masked Wrestlers: an overview](executive-summary/Masked%20Wrestlers%3A%20an%20overview.md)
-   - [A skill-first 3D arena fighter](executive-summary/a-skill-first-3d-arena-fighter.md)
-   - [Competitive integrity: fair play, anti-exploit, anti-P2W](executive-summary/competitive-integrity.md)
-   - [Powered by Masks, Mask Accessories, and Ring Gear](executive-summary/powered-by-masks-accessories-and-ring-gear.md)
-   - [Tomorrow: the future of Masked Wrestlers](executive-summary/tomorrow-the-future-of-masked-wrestlers.md)
+   - [A skill-first 3D arena fighter](executive-summary/A%20skill-first%203D%20arena%20fighter.md)
+   - [Competitive integrity: fair play, anti-exploit, anti-P2W](executive-summary/Competitive%20integrity%3A%20fair%20play%2C%20anti-exploit%2C%20anti-P2W.md)
+   - [Powered by Masks, Mask Accessories, and Ring Gear](executive-summary/Powered%20by%20Masks%2C%20Mask%20Accessories%2C%20and%20Ring%20Gear.md)
+   - [Tomorrow: the future of Masked Wrestlers](executive-summary/Tomorrow%3A%20the%20future%20of%20Masked%20Wrestlers.md)
 
 2. [The Masked Wrestlers ecosystem](the-masked-wrestlers-ecosystem/README.md)
    - [Platform](the-masked-wrestlers-ecosystem/platform.md)
