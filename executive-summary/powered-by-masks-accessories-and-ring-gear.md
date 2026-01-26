@@ -1,30 +1,48 @@
 # Powered by Masks, Mask Accessories, and Ring Gear
 
-Masked Wrestlers builds are made of three layers:
+Your identity in Masked Wrestlers is built like a real persona — modular, expressive, and earned.
 
-## 1) Masks (identity + rules)
+Your loadout is made of:
+1) **1 Mask**
+2) optional **Mask Accessories** (slot-based)
+3) optional **Ring Gear** (boots / tights / shirt / cape)
 
-Each mask belongs to a tier and defines how many accessory slots are available:
+---
 
-- **Common**: 1 accessory slot (Trait)
-- **Rare**: 2 accessory slots (Trait + Moves)
-- **Legendary**: 3 accessory slots (Trait + Moves + Power)
+## Masks (your persona)
+A Mask is your core identity — the thing people recognize.
+It defines your tier and the structure of your customization options.
 
-Power slots exist only for Legendary masks and unlock at higher level.
+---
 
-## 2) Mask Accessories (option-expanding)
+## Mask Accessories (your style knobs)
+Accessories let you shape how your fighter feels:
+- Trait slot (style tuning)
+- Moves slot (kit expression)
+- Power slot (high-tier expression, still bounded)
 
-Mask Accessories are adornments for the mask (hair, hats, earrings, glasses, etc.) that can also unlock build options. The guiding rule:
+Accessories are designed to be:
+- capped
+- tradeoff-driven
+- counterplay-aware
 
-- Accessories expand tools **within caps**, not unlimited raw stats.
+They add variety without breaking ranked integrity.
 
-## 3) Ring Gear (tuned equipment)
+---
 
-Ring Gear is separate equipment parts:
+## Ring Gear (your signature look)
+Ring Gear is where you flex identity:
+- boots
+- tights
+- top
+- cape
 
-- **Boots** (movement / dash control)
-- **Tights** (mobility tradeoffs, stamina efficiency)
-- **Top** (defense / guard tuning)
-- **Cape** (situational movement tools with strong counterplay)
+Gear can be cosmetic-first, and when it interacts with gameplay it follows the same integrity rules:
+caps, tradeoffs, and structured access.
 
-Ring Gear is designed to be non-NFT by default. If any part becomes tokenized later, it must still obey the same caps and anti-exploit locks.
+---
+
+## The best part
+Your build becomes recognizable.
+Players won’t just remember your name — they’ll remember your Mask.
+
