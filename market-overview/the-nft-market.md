@@ -1,5 +1,7 @@
 # The NFT market
 
+---
+
 ## Why NFTs matter to you as a player
 
 ### 1) You actually own your gear
