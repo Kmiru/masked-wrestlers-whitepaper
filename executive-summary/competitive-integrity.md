@@ -1,60 +1,38 @@
-# Competitive integrity: fair play, anti-exploit, anti-P2W
+# Competitive integrity
 
-Competitive integrity is a design constraint, not a marketing claim.
 
-## Design goals
+---
 
-- **Fair play**: every build has counterplay.
-- **Anti-exploit**: prevent “equip → fight → sell” loops.
-- **Anti pay-to-win**: bonuses are capped, situational, and tradeoff-based.
+## The integrity pillars
 
-## Non-negotiable rules
+### 1) Global caps 
+Build bonuses are capped so the meta can’t become “stack stats and steamroll.”
 
-### Tier locks (mandatory)
+### 2) Tradeoffs + counterplay (every strength has answers)
+If something boosts your style, it comes with:
+- a downside
+- constraints
+- and counterplay opportunities
 
-- Common accessory ↔ Common mask  
-- Rare accessory ↔ Rare mask  
-- Legendary accessory ↔ Legendary mask  
+This keeps matches interactive and skill-driven.
 
-### Slot rules (by mask tier)
+### 3) Structured builds (tier / slot / level rules)
+Customization is powerful, but organized:
+- tiers define which slots exist
+- slots define what kind of options you can use
+- levels unlock access over time (earned through play)
 
-- **Common**: 1 slot → Trait
-- **Rare**: 2 slots → Trait + Moves
-- **Legendary**: 3 slots → Trait + Moves + Power  
-  ✅ Power exists only for Legendary masks.
+### 4) Anti-exploit protections (no “market abuse” ladder cheating)
+Systems can include protections like:
+- lock/escrow while equipped (so you can’t abuse equip/sell loops)
+- match-bound loadout verification (so results correspond to the build used)
 
-### Level gates
 
-- **Common Trait slot** unlocks at **level ≥ 8**
-- **Legendary Power** unlocks at **level ≥ 50**
+---
 
-### Equip escrow/lock
+## What this means for you
+- Your wins matter
+- Your climb feels earned
+- Your build expresses your style without replacing skill
+- The competitive scene can grow without collapsing into pay-to-win
 
-Anything that provides build effects can be equipped via escrow:
-
-- Equip = transfer the item to the game contract (locked)
-- Unequip = return the item to the player
-
-This prevents the classic “equip → play → sell” exploit while keeping trading possible.
-
-### Global caps (sum of level + accessories + ring gear)
-
-To keep ranked competitive even at very high levels, total bonuses are hard-capped:
-
-- Total damage (effective STR): **max +18%**
-- Effective mitigation (DEF): **max +15%**
-- Stamina efficiency (costs/regen): **max ±15%**
-- Ground mobility (walk/dash): **max +10%**
-- Air mobility (air control/air dash): **max +12%**
-
-Frame-data changes are essentially zero by default. Any exception must be tiny and rare.
-
-## Match integrity (server-first)
-
-- **Server-authoritative combat** for hits, cooldowns, stamina, knockback.
-- **Match receipts** signed by the server before XP is credited.
-- **Loadout hash** (mask + accessories + ring gear) bound to each match.
-
-## Security note
-
-The project will never ask for seed phrases. Always verify official links and contracts.
