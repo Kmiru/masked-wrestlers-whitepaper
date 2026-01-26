@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Masked Wrestlers — Whitepaper + Catalog</title>
+  <style>
+    :root { color-scheme: dark light; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; }
+    header { position: sticky; top: 0; background: #111; color: #fff; padding: 12px 16px; z-index: 5; }
+    header b { letter-spacing: .2px; }
+    main { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 52px); }
+    nav { border-right: 1px solid #333; padding: 12px; overflow: auto; }
+    nav a { display: block; padding: 6px 8px; color: inherit; text-decoration: none; border-radius: 8px; }
+    nav a:hover { background: rgba(127,127,127,.15); }
+    .content { padding: 18px 18px 60px; max-width: 980px; }
+    .pill { display: inline-block; padding: 3px 10px; border: 1px solid #555; border-radius: 999px; font-size: 12px; opacity: .9; }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 22px; }
+    th, td { border: 1px solid #444; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: rgba(127,127,127,.1); }
+    code, pre { background: rgba(127,127,127,.12); border-radius: 10px; }
+    pre { padding: 12px; overflow: auto; }
+    .muted { opacity: .75; font-size: 13px; }
+    @media (max-width: 920px) {
+      main { grid-template-columns: 1fr; }
+      nav { border-right: none; border-bottom: 1px solid #333; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header>
+    <b>Masked Wrestlers</b>
+    <span class="muted">Whitepaper • Technical Notes • Catalog</span>
+  </header>
+
+  <main>
+    <nav id="nav">
+      <div class="row">
+        <span class="pill">GitHub Pages ready</span>
+        <span class="pill">Loads Markdown + Catalog JSON</span>
+      </div>
+
+      <a href="#/whitepaper/readme" data-route="whitepaper/readme">Whitepaper (README)</a>
+      <a href="#/whitepaper/summary" data-route="whitepaper/summary">Table of contents</a>
+      <hr />
+      <a href="#/docs/technical" data-route="docs/technical">Technical Notes</a>
+      <a href="#/docs/catalog" data-route="docs/catalog">Catalog (Readable)</a>
+      <a href="#/catalog/table" data-route="catalog/table">Catalog (Interactive Table)</a>
+      <hr />
+      <a href="data/catalog.v1.json" target="_blank" rel="noreferrer">Download catalog.v1.json</a>
+      <a href="data/catalog.v1.csv" target="_blank" rel="noreferrer">Download catalog.v1.csv</a>
+
+      <p class="muted" style="margin-top:14px">
+        Put this file at repo root as <code>index.html</code>, and copy <code>docs/</code> + <code>data/</code>.
+      </p>
+    </nav>
+
+    <div class="content" id="content">Loading…</div>
+  </main>
+
+  <script>
+    const routes = {
+      "whitepaper/readme": ["README.md", "markdown"],
+      "whitepaper/summary": ["SUMMARY.md", "markdown"],
+      "docs/technical": ["docs/TECHNICAL.md", "markdown"],
+      "docs/catalog": ["docs/CATALOG.md", "markdown"],
+      "catalog/table": ["data/catalog.v1.json", "catalogTable"],
+    };
+
+    function setActive(route) {
+      document.querySelectorAll("nav a[data-route]").forEach(a => {
+        a.style.background = (a.dataset.route === route) ? "rgba(127,127,127,.2)" : "";
+      });
+    }
+
+    async function loadMarkdown(p) {
+      const res = await fetch(p, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Failed to load ${p}: ${res.status}`);
+      return marked.parse(await res.text());
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+    }
+
+    function renderTable(items) {
+      const rows = items.map(it => `
+        <tr>
+          <td>${it.id}</td>
+          <td>${escapeHtml(it.type)}</td>
+          <td>${escapeHtml(it.tier)}</td>
+          <td>${escapeHtml(it.slot)}</td>
+          <td>${escapeHtml(it.name)}</td>
+          <td>${it.minLevel ?? 1}</td>
+          <td><pre>${escapeHtml(JSON.stringify(it.mods ?? {}, null, 0))}</pre></td>
+          <td><pre>${escapeHtml(JSON.stringify(it.ability ?? {}, null, 0))}</pre></td>
+          <td><pre>${escapeHtml(JSON.stringify(it.tradeoffs ?? {}, null, 0))}</pre></td>
+        </tr>
+      `).join("");
+
+      return `
+        <h1>Catalog v1</h1>
+        <p class="muted">Loaded from <code>data/catalog.v1.json</code> — ${items.length} items.</p>
+        <input id="q" placeholder="Search by name / tag…" style="width:100%;padding:10px;border-radius:10px;border:1px solid #444;background:transparent;color:inherit" />
+        <div style="overflow:auto;margin-top:12px">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th><th>Type</th><th>Tier</th><th>Slot</th><th>Name</th><th>Min Lvl</th><th>Mods</th><th>Ability</th><th>Tradeoffs</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">${rows}</tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    async function loadCatalogTable(p) {
+      const res = await fetch(p, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Failed to load ${p}: ${res.status}`);
+      const data = await res.json();
+      const items = (data.items ?? []).slice().sort((a,b)=>a.id-b.id);
+      document.getElementById("content").innerHTML = renderTable(items);
+
+      const tbody = document.getElementById("tbody");
+      const q = document.getElementById("q");
+      const all = items;
+
+      q.addEventListener("input", () => {
+        const s = q.value.trim().toLowerCase();
+        const filtered = !s ? all : all.filter(it => JSON.stringify(it).toLowerCase().includes(s));
+        tbody.innerHTML = filtered.map(it => `
+          <tr>
+            <td>${it.id}</td>
+            <td>${escapeHtml(it.type)}</td>
+            <td>${escapeHtml(it.tier)}</td>
+            <td>${escapeHtml(it.slot)}</td>
+            <td>${escapeHtml(it.name)}</td>
+            <td>${it.minLevel ?? 1}</td>
+            <td><pre>${escapeHtml(JSON.stringify(it.mods ?? {}, null, 0))}</pre></td>
+            <td><pre>${escapeHtml(JSON.stringify(it.ability ?? {}, null, 0))}</pre></td>
+            <td><pre>${escapeHtml(JSON.stringify(it.tradeoffs ?? {}, null, 0))}</pre></td>
+          </tr>
+        `).join("");
+      });
+    }
+
+    async function render() {
+      const route = (location.hash || "#/whitepaper/readme").replace(/^#\//, "");
+      const entry = routes[route];
+      if (!entry) {
+        document.getElementById("content").innerHTML = "<h1>Not found</h1>";
+        return;
+      }
+      setActive(route);
+
+      const [p, kind] = entry;
+      try {
+        if (kind === "markdown") {
+          document.getElementById("content").innerHTML = await loadMarkdown(p);
+        } else {
+          await loadCatalogTable(p);
+        }
+      } catch (e) {
+        document.getElementById("content").innerHTML = `<h1>Error</h1><pre>${escapeHtml(e?.message ?? String(e))}</pre>`;
+      }
+    }
+
+    window.addEventListener("hashchange", render);
+    render();
+  </script>
+</body>
+</html>
