@@ -1,7 +1,7 @@
 # Table of contents
 
 1. [Executive summary](executive-summary/README.md)
-   - [Masked Wrestlers: an overview](executive-summary/masked-wrestlers-an-overview.md)
+   - [Masked Wrestlers: an overview](executive-summary/Masked%20Wrestlers%3A%20an%20overview.md)
    - [A skill-first 3D arena fighter](executive-summary/a-skill-first-3d-arena-fighter.md)
    - [Competitive integrity: fair play, anti-exploit, anti-P2W](executive-summary/competitive-integrity.md)
    - [Powered by Masks, Mask Accessories, and Ring Gear](executive-summary/powered-by-masks-accessories-and-ring-gear.md)
