@@ -35,7 +35,7 @@ Instead of being stuck with random drops:
 #### 3) A deeper identity loop
 Your persona becomes persistent:
 - Mask = your core identity
-- Accessories = how you express playstyle (within rules)
+- Accessories = how you express playstyle (skills/modifiers)
 - Ring Gear = your visual signature
 
 ---
@@ -95,11 +95,11 @@ This prevents exploit patterns like:
 
 - **In-game:** equip, build, play, level up
 - **Website:** official docs, contract links, drops, events
-- **Marketplace (optional):** trade supported items under the rules
+- **Marketplace:** trade supported items under the rules
 
 ---
 
 ## The player promise
 - You can play and compete without NFTs.
-- If you choose NFTs, you gain ownership + flexibility + identity.
+- If you choose NFTs, you gain ownership + flexibility + identity + modifiers
 - Ranked remains skill-first because the system enforces caps, tradeoffs, and anti-exploit protections.
