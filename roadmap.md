@@ -1,185 +1,102 @@
-# Roadmap (From vision to a real competitive scene)
+# Roadmap (Execution plan)
 
-Masked Wrestlers is being built the way competitive games earn trust:
-**show the game, prove the fun, protect integrity, then scale content and seasons.**
+Masked Wrestlers is being developed in stages that prioritize:
+1) fun and competitive clarity,
+2) integrity protections,
+3) scalable content pipelines,
+4) ecosystem utility only after the gameplay loop is proven.
 
-This roadmap reflects the planned journey from documentation and community-building
-to a playable arena fighter with a living economy and Season 1 content.
-
----
-
-## Phase 1 — Whitepaper + Website (Clarity, trust, community)
-
-### What happens
-- Whitepaper and documentation finalized (player-first language)
-- Website launch (official hub: docs, catalog info, verified links, announcements)
-- Community channels opened and structured (early supporters + feedback loop)
-- Early previews of Masks, Patches, Ring Gear direction (visual + system explanation)
-
-### What players get
-- A clear understanding of how the game works
-- A reason to follow early and join the community
-- Confidence that the project is building something real
+This roadmap is structured to minimize risk, maximize player trust, and create a sustainable competitive scene.
 
 ---
 
-## Phase 2 — Funding launch (Memecoin for momentum)
-
-### What happens
-- Memecoin launch as a funding + community growth vehicle
-- Clear messaging: memecoin supports development, not ranked power
-- Transparency: how funds are used (dev, art, infrastructure, testing, events)
-
-### What players get
-- A rally point for community momentum
-- Faster development and bigger reach
-- More frequent drops of previews, concepts, and progress
+## Phase 1 — Documentation & web presence
+- Finalize whitepaper and ecosystem rules (player-first clarity)
+- Launch website as the official hub (docs, catalog references, verified links, announcements)
+- Establish community channels and feedback loops
 
 ---
 
-## Phase 3 — Vertical slice (Make the game feel addictive)
-
-### What happens
-- Core combat prototype (movement, spacing, timing, stamina rhythm)
-- At least one arena + a small roster of wrestlers (baseline kits)
-- Basic match types (the ones that define the identity of the game)
-- Early loadout structure working end-to-end:
-  - Mask → Patch slots → Gear slots (Boots/Tights/Top/Cape)
-
-### Why this comes before “tons of content”
-Because once the game is playable, you can balance around reality:
-- what feels fun
-- what breaks the ladder
-- what players actually use
-
-### What players get
-- Proof that this is a real competitive game
-- Early meta, early rivalries, early clips
+## Phase 2 — Funding & awareness (memecoin)
+- Launch a memecoin to support development and marketing
+- Maintain clear separation between funding mechanisms and competitive integrity
+- Publish transparency on usage: development, art, infrastructure, testing, and community growth
 
 ---
 
-## Phase 4 — Content production (Scale the world)
-
-### What happens
-- Masks production pipeline (tiers, traits, catalog IDs)
-- Patches production pipeline (skills/modifiers with caps/tradeoffs/counterplay)
-- Ring Gear production pipeline (Boots/Tights/Top/Cape collections)
-- Wrestlers expansion (more kits, more matchup variety)
-- Arenas expansion (readable, competitive-safe layouts)
-- Platform foundations (accounts, matchmaking, progression hooks)
-
-### What players get
-- More variety, more identity, more matchups
-- More ways to specialize without breaking fairness
+## Phase 3 — Vertical slice (playable proof)
+- Deliver a playable core prototype:
+  - movement/spacing/timing/stamina fundamentals
+  - at least one arena and a small roster of wrestlers
+  - early game modes that define the core loop
+- Implement the first end-to-end loadout loop:
+  Mask → Patch slots → Ring Gear (Boots/Tights/Top/Cape)
 
 ---
 
-## Phase 5 — Closed Test (Alpha: prove the integrity)
-
-### What happens
-- Closed alpha test with limited players
-- Focus areas:
-  - balance and counterplay
-  - exploit prevention
-  - matchmaking and latency performance
-  - patch impact vs skill impact
-  - progression pacing sanity checks
-
-### What players get
-- Early access (for a controlled group)
-- The first “real ladder feel” feedback loop
+## Phase 4 — Content & platform buildout
+- Expand production pipelines:
+  - Masks (tiers, catalog IDs, identity)
+  - Patches (skills/modifiers with caps, tradeoffs, counterplay)
+  - Ring Gear (Boots/Tights/Top/Cape)
+- Expand wrestlers, arenas, and game mode variety
+- Implement platform foundations:
+  accounts, matchmaking, progression hooks, inventory/loadout UX
 
 ---
 
-## Phase 6 — Iteration (Fix, tune, polish)
+## Phase 5 — Closed alpha (integrity validation)
+- Conduct closed testing focused on:
+  balance, exploit prevention, matchmaking performance,
+  patch impact vs skill impact, and progression pacing
+- Iterate on findings and tighten integrity protections
 
-### What happens
-- Combat tuning (timing windows, stamina, movement)
-- Patch tuning (caps/tradeoffs, banned interactions, clarity)
-- UI/UX polish (loadouts, inventory, match flow)
+---
+
+## Phase 6 — Iteration & polish
+- Combat tuning and balance refinement
+- Patch system tuning (caps/tradeoffs, restrictions if needed)
 - Stability improvements and performance optimization
-
-### What players get
-- Cleaner fights
-- More readable builds
-- Less frustration, more mastery
+- UI/UX polish and accessibility improvements
 
 ---
 
-## Phase 7 — Public Test (Beta: grow the community)
-
-### What happens
-- Broader beta access
-- Stress testing matchmaking and platform
-- Meta stabilization and live balance processes
-- Community formats (events, creator content support)
-
-### What players get
-- Wider access
-- A real sense of a growing scene
-- The start of long-term culture
+## Phase 7 — Public beta (scale validation)
+- Increase player access
+- Stress test infrastructure and matchmaking
+- Establish live balance process and communication cadence
+- Run structured community events for competitive validation
 
 ---
 
-## Phase 8 — Launch v1 (The arena opens)
-
-### What ships
-- Ranked + casual + training loop
-- Level progression (Level 1–1000)
-- v1 catalog (Masks/Patches/Gear) with clear rules
-- Official website hub fully aligned
-- Marketplace rules integrated (without compromising ranked)
-
-### What players get
-- A ladder that means something
-- Builds that express style
-- Identity that becomes recognizable
+## Phase 8 — Launch v1
+- Ship core experience:
+  ranked/casual/training loops,
+  Level progression (Level 1–1000),
+  v1 catalog (Masks/Patches/Gear),
+  official website hub fully aligned
+- Integrate marketplace rules without compromising match integrity
 
 ---
 
-## Phase 9 — Utility Token launch (Fuel the ecosystem)
-
-### Token utility (player-facing)
-- Buy Masks / NFTs and marketplace interactions
-- Pay platform/marketplace fees (as applicable)
-- Event entry fees and ecosystem services
-- Wagers/bets introduced later under strict integrity + compliance controls
-
-### What players get
-- A unified currency for ecosystem utility
-- Features that connect gameplay → economy → events
+## Phase 9 — Utility token launch (ecosystem utility)
+- Launch utility token after gameplay utility is established
+- Intended uses:
+  purchase of Masks/NFTs, platform/marketplace fees (as applicable),
+  event entry fees, and ecosystem services
+- Introduce wagering/betting later with strict integrity and compliance controls
 
 ---
 
-## Phase 10 — Post-launch upgrades (Finish what matters)
-
-### What happens
-- Priority bug fixes and balance patches
-- QoL improvements (match flow, training tools, inventory)
-- Anti-exploit upgrades and security hardening
-- Communication cadence (patch notes, dev updates)
-
-### What players get
-- Trust: the game is supported
-- Stability: the ladder stays legitimate
+## Phase 10 — Post-launch upgrades
+- Prioritize bug fixes, balance patches, QoL improvements
+- Security hardening and anti-exploit upgrades
+- Ongoing content tuning based on real player behavior
 
 ---
 
-## Phase 11 — Season 1 (The ecosystem starts breathing)
-
-### What happens
-- New Patch sets (skills/modifiers designed with counterplay)
-- New Gear collections (Boots/Tights/Top/Cape)
-- New themes and goals
-- Events/tournaments that start building the scene
-
-### What players get
-- Fresh goals and new builds
-- New identity culture
-- The feeling that the game is alive
-
----
-
-
-
-_Last updated: January 21, 2026_
+## Phase 11 — Season 1
+- Release Season 1 content:
+  new Patch sets, new Gear collections,
+  seasonal themes and goals, and expanded event formats
+- Continue balance philosophy: variety without power creep
