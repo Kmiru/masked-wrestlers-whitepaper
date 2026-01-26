@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -257,13 +257,13 @@
       </div>
 
       <div class="search">
-        <input id="search" type="search" placeholder="Buscar secciones…" />
+        <input id="search" type="search" placeholder="Search sections…" />
       </div>
 
       <nav class="nav" id="nav"></nav>
 
       <div class="footerhint">
-        Tip: comparte un link directo a una sección usando el hash <code>#doc=...</code>
+        Tip: share a direct link to a section using the hash <code>#doc=...</code>
       </div>
     </aside>
 
@@ -273,8 +273,6 @@
           <div class="hero">
             <h2>Masked Wrestlers — Whitepaper</h2>
             <p>
-              Portal tipo GitBook que carga todas las páginas del whitepaper y el documento técnico.
-              Diseñado para GitHub Pages (o cualquier hosting estático).
             </p>
 
             <div class="pillbar">
@@ -289,85 +287,85 @@
 
           <div class="actions">
             <a class="btn" id="repoLink" target="_blank" rel="noreferrer">GitHub Repo</a>
-            <button class="btn" id="printBtn">Imprimir / PDF</button>
-            <button class="btn" id="homeBtn">Inicio</button>
+            <button class="btn" id="printBtn">Print / PDF</button>
+            <button class="btn" id="homeBtn">Home</button>
           </div>
         </header>
 
-        <!-- Resumen visible siempre -->
+        <!-- Summary always visible -->
         <section class="grid" id="summary">
           <div class="card">
-            <h3>Resumen (visión)</h3>
+            <h3>Summary (Vision)</h3>
             <p>
-              Juego de lucha técnico donde el “build” se define por máscara NFT, parches por slots y ring gear por partes,
-              con enfoque anti-P2W (caps globales) y progreso hasta nivel 1000.
+              Technical fighting game where the "build" is defined by NFT masks, slot-based patches, and piece-based ring gear,
+              with anti-P2W focus (global caps) and progression up to level 1000.
             </p>
             <ul>
-              <li>Mask NFT (tiers) + Patch tokens (slots) + Outfit/Ring Gear por piezas</li>
-              <li>Progression: XP → Nivel → desbloqueo de slots y contenido</li>
-              <li>Integridad competitiva: caps + firma de resultados + loadoutHash</li>
+              <li>Mask NFT (tiers) + Patch tokens (slots) + Outfit/Ring Gear by pieces</li>
+              <li>Progression: XP → Level → slot and content unlocks</li>
+              <li>Competitive integrity: caps + signed results + loadoutHash</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Seguridad / Integridad</h3>
+            <h3>Security / Integrity</h3>
             <p>
-              Al equipar, el item queda “lock/escrow” para evitar exploits. Resultados firmados EIP-712 con <code>matchId</code>
-              anti-replay y <code>loadoutHash</code> que ancla el build usado.
+              When equipped, items are "lock/escrow" to prevent exploits. Results are EIP-712 signed with <code>matchId</code>
+              anti-replay and <code>loadoutHash</code> anchoring the used build.
             </p>
             <ul>
               <li>Equip = escrow/lock</li>
-              <li>Claim de match con firma autorizada</li>
-              <li>Loadout hash para consistencia client/server</li>
+              <li>Match claim with authorized signature</li>
+              <li>Loadout hash for client/server consistency</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Contenido & Catálogo</h3>
+            <h3>Content & Catalog</h3>
             <p>
-              Whitepaper (narrativa) + Technical Spec (GDD + Smart Contracts + Backend + Schemas) + Catálogo versionado.
-              Recomendación: <code>catalog.v1.*</code> inmutable y nuevos cambios en v2/v1.0.1.
+              Whitepaper (narrative) + Technical Spec (GDD + Smart Contracts + Backend + Schemas) + Versioned Catalog.
+              Recommendation: <code>catalog.v1.*</code> immutable and new changes in v2/v1.0.1.
             </p>
             <ul>
-              <li>Whitepaper: capítulos estilo GitBook</li>
-              <li>Spec: contratos, eventos, flujos, esquemas</li>
-              <li>Catálogo: CSV/JSON (fuente de verdad)</li>
+              <li>Whitepaper: GitBook-style chapters</li>
+              <li>Spec: contracts, events, flows, schemas</li>
+              <li>Catalog: CSV/JSON (source of truth)</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Cómo usar este portal</h3>
+            <h3>How to use this portal</h3>
             <p>
-              El sidebar lista todos los documentos. Al hacer click, se carga el Markdown y se muestra aquí.
-              Puedes copiar un link directo como <code>#doc=executive-summary/competitive-integrity.md</code>.
+              The sidebar lists all documents. Clicking loads the Markdown and displays it here.
+              You can copy a direct link like <code>#doc=executive-summary/competitive-integrity.md</code>.
             </p>
             <ul>
-              <li>Funciona con rutas relativas (mismo repo)</li>
-              <li>Fallback automático a GitHub RAW</li>
-              <li>Buscar títulos en el sidebar</li>
+              <li>Works with relative paths (same repo)</li>
+              <li>Automatic fallback to GitHub RAW</li>
+              <li>Search titles in sidebar</li>
             </ul>
           </div>
         </section>
 
-        <!-- Documento cargado -->
+        <!-- Loaded document -->
         <section class="docbox">
           <div class="docmeta">
             <div class="left">
-              <div class="title" id="docTitle">Inicio</div>
+              <div class="title" id="docTitle">Home</div>
               <div class="path" id="docPath">—</div>
             </div>
             <div class="right">
-              <a class="btn" id="rawBtn" target="_blank" rel="noreferrer">Ver RAW</a>
+              <a class="btn" id="rawBtn" target="_blank" rel="noreferrer">View RAW</a>
             </div>
           </div>
 
           <article class="doc" id="doc">
-            <h1>Bienvenido</h1>
+            <h1>Welcome</h1>
             <p>
-              Selecciona una sección en el sidebar para ver el contenido del whitepaper o del documento técnico.
+              Select a section in the sidebar to view whitepaper or technical documentation content.
             </p>
             <blockquote>
-              Si algo no carga, revisa que el archivo exista en el repo con el mismo path que aparece en el link.
+              If something doesn't load, check that the file exists in the repo with the same path shown in the link.
             </blockquote>
           </article>
         </section>
@@ -380,7 +378,7 @@
 
   <script>
     // =============================
-    // CONFIG: cambia esto si tu branch o usuario cambian
+    // CONFIG: change this if your branch or user changes
     // =============================
     const CONFIG = {
       owner: "Kmiru",
@@ -392,7 +390,7 @@
     const REPO_URL  = `https://github.com/${CONFIG.owner}/${CONFIG.repo}`;
 
     // =============================
-    // DOCS: navegación completa (GitBook) + sección Technical
+    // DOCS: complete navigation (GitBook) + Technical section
     // =============================
     const DOCS = [
       // Root
@@ -443,13 +441,13 @@
       { group: "Legal", title: "Disclaimer", path: "disclaimer.md" },
       { group: "Legal", title: "Abbreviations", path: "abbreviations.md" },
 
-      // Technical (añade tus archivos)
+      // Technical (add your files)
       { group: "Technical", title: "Technical Spec (v1) — GDD + Smart Contracts + Backend", path: "technical/technical.md" },
       { group: "Technical", title: "Catalog v1 (CSV)", path: "technical/catalog.v1.csv", asCode: true },
       { group: "Technical", title: "Catalog v1 (JSON)", path: "technical/catalog.v1.json", asCode: true },
       { group: "Technical", title: "types.ts", path: "technical/types.ts", asCode: true },
       { group: "Technical", title: "loadCatalog.ts", path: "technical/loadCatalog.ts", asCode: true },
-      { group: "Technical", title: "ItemIds.ts", path: "technical/itemIds.ts", asCode: true },
+      { group: "Technical", title: "ItemIds.ts", path: "technical/ItemIds.ts", asCode: true },
     ];
 
     // =============================
@@ -458,7 +456,7 @@
     const $ = (sel) => document.querySelector(sel);
 
     function safePath(p){
-      // Evita rutas raras/injection
+      // Prevent weird/injection paths
       const ok = /^[a-zA-Z0-9_\-./]+$/.test(p);
       return ok ? p : null;
     }
@@ -473,11 +471,11 @@
       const sp = safePath(path);
       if(!sp) throw new Error("Invalid path");
 
-      // 1) Primero intenta relativo (ideal para GitHub Pages)
+      // 1) First try relative (ideal for GitHub Pages)
       try{
         return await fetchText(sp);
       }catch(_){
-        // 2) Fallback a GitHub RAW
+        // 2) Fallback to GitHub RAW
         return await fetchText(RAW_BASE + sp);
       }
     }
@@ -587,26 +585,26 @@
       setActive(path);
 
       const container = $("#doc");
-      container.innerHTML = "<p>Cargando…</p>";
+      container.innerHTML = "<p>Loading…</p>";
 
       try{
         const text = await fetchWithFallback(sp);
 
-        // Si el doc se marcó como asCode (CSV/JSON/TS), muéstralo como code
+        // If doc is marked as asCode (CSV/JSON/TS), show as code
         if(doc.asCode){
           renderCodeTo(container, text);
         }else{
           renderMarkdownTo(container, text);
         }
 
-        // scroll al top del doc
+        // scroll to top of doc
         container.scrollIntoView({ behavior: "smooth", block: "start" });
       }catch(err){
         container.innerHTML = `
-          <h2>Error cargando documento</h2>
-          <p>No pude cargar: <code>${escapeHtml(path)}</code></p>
-          <p style="color:#64748b">Detalle: ${escapeHtml(String(err))}</p>
-          <p>Revisa que el archivo exista con ese path en tu repo.</p>
+          <h2>Error loading document</h2>
+          <p>Could not load: <code>${escapeHtml(path)}</code></p>
+          <p style="color:#64748b">Detail: ${escapeHtml(String(err))}</p>
+          <p>Check that the file exists with that path in your repo.</p>
         `;
       }
     }
@@ -618,13 +616,13 @@
     $("#printBtn").addEventListener("click", () => window.print());
     $("#homeBtn").addEventListener("click", () => {
       history.pushState(null, "", "#");
-      $("#docTitle").textContent = "Inicio";
+      $("#docTitle").textContent = "Home";
       $("#docPath").textContent = "—";
       $("#rawBtn").href = REPO_URL;
       $("#doc").innerHTML = `
-        <h1>Inicio</h1>
-        <p>Usa el sidebar para abrir cualquier sección del whitepaper o el spec técnico.</p>
-        <blockquote>Tip: si estás en GitHub Pages, esto funciona sin GitBook/Next.js.</blockquote>
+        <h1>Home</h1>
+        <p>Use the sidebar to open any section of the whitepaper or technical spec.</p>
+        <blockquote>Tip: if you're on GitHub Pages, this works without GitBook/Next.js.</blockquote>
       `;
       document.querySelectorAll("a.item").forEach(a => a.classList.remove("active"));
     });
@@ -638,10 +636,9 @@
       if(p) loadDoc(p);
     });
 
-    // Cargar doc inicial si viene en la URL
+    // Load initial doc if present in URL
     const initial = getDocFromHash();
     if(initial) loadDoc(initial);
   </script>
 </body>
 </html>
-
