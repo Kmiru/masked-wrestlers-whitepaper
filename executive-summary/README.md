@@ -12,7 +12,7 @@ With NFTs, you unlock an optional layer of **ownership, trading, and collectible
 
 In Masked Wrestlers, your fighter isn’t just a character pick — it’s a persona you build:
 - **Mask** = your identity (and tier)
-- **Mask Accessories** = your style knobs (slot-based choices)
+- **Mask Accessories** = your style knobs (skills/modifiers)
 - **Ring Gear** = your visual signature (boots / tights / top / cape)
 
 
@@ -33,8 +33,8 @@ In Masked Wrestlers, your fighter isn’t just a character pick — it’s a per
 ### Customize
 Build your loadout from:
 1) **1 Mask**
-2) optional **Mask Accessories** (Trait / Moves / Power slots)
-3) optional **Ring Gear** (boots / tights / top / cape)
+2) **Mask Accessories** (Trait / Moves / Power slots)
+3) **Ring Gear** (boots / tights / top / cape)
 
 ---
 
