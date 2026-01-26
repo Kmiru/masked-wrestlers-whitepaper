@@ -1,175 +1,647 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Masked Wrestlers — Whitepaper + Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Masked Wrestlers — Whitepaper</title>
+
+  <!-- Markdown + code highlight -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/github.min.css">
+
   <style>
-    :root { color-scheme: dark light; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; }
-    header { position: sticky; top: 0; background: #111; color: #fff; padding: 12px 16px; z-index: 5; }
-    header b { letter-spacing: .2px; }
-    main { display: grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 52px); }
-    nav { border-right: 1px solid #333; padding: 12px; overflow: auto; }
-    nav a { display: block; padding: 6px 8px; color: inherit; text-decoration: none; border-radius: 8px; }
-    nav a:hover { background: rgba(127,127,127,.15); }
-    .content { padding: 18px 18px 60px; max-width: 980px; }
-    .pill { display: inline-block; padding: 3px 10px; border: 1px solid #555; border-radius: 999px; font-size: 12px; opacity: .9; }
-    .row { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 20px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0 22px; }
-    th, td { border: 1px solid #444; padding: 8px; text-align: left; vertical-align: top; }
-    th { background: rgba(127,127,127,.1); }
-    code, pre { background: rgba(127,127,127,.12); border-radius: 10px; }
-    pre { padding: 12px; overflow: auto; }
-    .muted { opacity: .75; font-size: 13px; }
-    @media (max-width: 920px) {
-      main { grid-template-columns: 1fr; }
-      nav { border-right: none; border-bottom: 1px solid #333; }
+    :root{
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --border:#e2e8f0;
+      --card:#ffffff;
+      --sidebar:#fbfbfd;
+      --link:#2563eb;
+      --codebg:#0b1020;
+      --shadow: 0 10px 30px rgba(2,6,23,.08);
+      --radius: 14px;
+      --maxw: 1120px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); background:var(--bg);
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .layout{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      min-height:100vh;
+    }
+
+    /* Sidebar */
+    aside{
+      position:sticky; top:0; height:100vh;
+      background:var(--sidebar);
+      border-right:1px solid var(--border);
+      padding:18px 14px;
+      overflow:auto;
+    }
+    .brand{
+      display:flex; gap:10px; align-items:center;
+      padding:10px 10px 14px;
+    }
+    .logo{
+      width:34px; height:34px; border-radius:10px;
+      background:linear-gradient(135deg,#111827,#334155);
+      box-shadow: var(--shadow);
+    }
+    .brand h1{font-size:14px; margin:0}
+    .brand p{font-size:12px; margin:2px 0 0; color:var(--muted)}
+    .search{
+      padding:10px;
+    }
+    .search input{
+      width:100%;
+      padding:10px 12px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      outline:none;
+      background:#fff;
+    }
+    .navgroup{margin:10px 6px 16px}
+    .navgroup .title{
+      font-size:11px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin:12px 6px 8px;
+    }
+    .nav a.item{
+      display:block;
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--text);
+      font-size:13px;
+      line-height:1.25em;
+      border:1px solid transparent;
+    }
+    .nav a.item:hover{
+      background:#fff;
+      border-color:var(--border);
+      text-decoration:none;
+    }
+    .nav a.item.active{
+      background:#fff;
+      border-color:rgba(37,99,235,.25);
+      box-shadow: 0 8px 20px rgba(2,6,23,.06);
+    }
+    .sub{
+      margin-left:10px;
+      padding-left:10px;
+      border-left:1px dashed var(--border);
+    }
+
+    /* Main */
+    main{
+      padding:26px 18px 60px;
+    }
+    .wrap{max-width:var(--maxw); margin:0 auto;}
+    header.top{
+      display:flex; align-items:flex-start; justify-content:space-between;
+      gap:14px; margin-bottom:14px;
+    }
+    .hero h2{margin:0; font-size:26px; letter-spacing:-0.02em}
+    .hero p{margin:8px 0 0; color:var(--muted); max-width:75ch}
+    .pillbar{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .pill{
+      font-size:12px; color:#0f172a;
+      background:#f1f5f9;
+      border:1px solid var(--border);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+    .actions{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+    }
+    .btn{
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+      cursor:pointer;
+      font-size:13px;
+    }
+    .btn:hover{box-shadow: var(--shadow)}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+      margin:18px 0 18px;
+    }
+    .card{
+      grid-column: span 6;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:14px 14px;
+      box-shadow: 0 8px 25px rgba(2,6,23,.05);
+    }
+    .card h3{margin:0 0 8px; font-size:14px}
+    .card p{margin:0; color:var(--muted); font-size:13px; line-height:1.5em}
+    .card ul{margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:13px}
+    .card li{margin:6px 0}
+
+    .docbox{
+      margin-top:16px;
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(2,6,23,.06);
+      overflow:hidden;
+      background:#fff;
+    }
+    .docmeta{
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
+      background:#fcfcff;
+    }
+    .docmeta .left{
+      display:flex; flex-direction:column; gap:2px;
+      min-width:0;
+    }
+    .docmeta .path{
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      max-width:70ch;
+    }
+    .docmeta .title{
+      font-weight:650;
+      font-size:13px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      max-width:70ch;
+    }
+    .doc{
+      padding:18px 18px 28px;
+    }
+
+    /* Markdown styles */
+    .doc h1{font-size:26px; margin:0 0 14px}
+    .doc h2{font-size:20px; margin:20px 0 10px}
+    .doc h3{font-size:16px; margin:18px 0 8px}
+    .doc p{color:#0f172a; line-height:1.7em}
+    .doc blockquote{
+      margin:14px 0; padding:10px 14px;
+      border-left:4px solid #cbd5e1;
+      background:#f8fafc;
+      color:#334155;
+      border-radius:10px;
+    }
+    .doc code{
+      font-family:var(--mono);
+      font-size:12px;
+      background:#f1f5f9;
+      padding:2px 6px;
+      border-radius:8px;
+      border:1px solid #e2e8f0;
+    }
+    .doc pre{
+      background:var(--codebg);
+      color:#e5e7eb;
+      padding:14px;
+      border-radius:14px;
+      overflow:auto;
+      border:1px solid rgba(255,255,255,.08);
+    }
+    .doc pre code{
+      background:transparent;
+      border:none;
+      padding:0;
+      color:inherit;
+      font-size:12px;
+    }
+    .doc table{
+      width:100%;
+      border-collapse:collapse;
+      margin:12px 0;
+      font-size:13px;
+    }
+    .doc th,.doc td{
+      border:1px solid var(--border);
+      padding:8px 10px;
+      vertical-align:top;
+    }
+    .doc th{background:#f8fafc; text-align:left}
+    .footerhint{
+      margin-top:18px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    @media (max-width: 980px){
+      .layout{grid-template-columns: 1fr}
+      aside{position:relative; height:auto}
+      .card{grid-column: span 12;}
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <header>
-    <b>Masked Wrestlers</b>
-    <span class="muted">Whitepaper • Technical Notes • Catalog</span>
-  </header>
-
-  <main>
-    <nav id="nav">
-      <div class="row">
-        <span class="pill">GitHub Pages ready</span>
-        <span class="pill">Loads Markdown + Catalog JSON</span>
+  <div class="layout">
+    <aside>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Masked Wrestlers</h1>
+          <p>Whitepaper + Technical Spec</p>
+        </div>
       </div>
 
-      <a href="#/whitepaper/readme" data-route="whitepaper/readme">Whitepaper (README)</a>
-      <a href="#/whitepaper/summary" data-route="whitepaper/summary">Table of contents</a>
-      <hr />
-      <a href="#/docs/technical" data-route="docs/technical">Technical Notes</a>
-      <a href="#/docs/catalog" data-route="docs/catalog">Catalog (Readable)</a>
-      <a href="#/catalog/table" data-route="catalog/table">Catalog (Interactive Table)</a>
-      <hr />
-      <a href="data/catalog.v1.json" target="_blank" rel="noreferrer">Download catalog.v1.json</a>
-      <a href="data/catalog.v1.csv" target="_blank" rel="noreferrer">Download catalog.v1.csv</a>
+      <div class="search">
+        <input id="search" type="search" placeholder="Buscar secciones…" />
+      </div>
 
-      <p class="muted" style="margin-top:14px">
-        Put this file at repo root as <code>index.html</code>, and copy <code>docs/</code> + <code>data/</code>.
-      </p>
-    </nav>
+      <nav class="nav" id="nav"></nav>
 
-    <div class="content" id="content">Loading…</div>
-  </main>
+      <div class="footerhint">
+        Tip: comparte un link directo a una sección usando el hash <code>#doc=...</code>
+      </div>
+    </aside>
+
+    <main>
+      <div class="wrap">
+        <header class="top">
+          <div class="hero">
+            <h2>Masked Wrestlers — Whitepaper</h2>
+            <p>
+              Portal tipo GitBook que carga todas las páginas del whitepaper y el documento técnico.
+              Diseñado para GitHub Pages (o cualquier hosting estático).
+            </p>
+
+            <div class="pillbar">
+              <span class="pill">Skill-first</span>
+              <span class="pill">Masks + Accessories + Ring Gear</span>
+              <span class="pill">Anti-P2W caps</span>
+              <span class="pill">Escrow equip</span>
+              <span class="pill">EIP-712 + loadoutHash</span>
+              <span class="pill">Level 1–1000</span>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="btn" id="repoLink" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <button class="btn" id="printBtn">Imprimir / PDF</button>
+            <button class="btn" id="homeBtn">Inicio</button>
+          </div>
+        </header>
+
+        <!-- Resumen visible siempre -->
+        <section class="grid" id="summary">
+          <div class="card">
+            <h3>Resumen (visión)</h3>
+            <p>
+              Juego de lucha técnico donde el “build” se define por máscara NFT, parches por slots y ring gear por partes,
+              con enfoque anti-P2W (caps globales) y progreso hasta nivel 1000.
+            </p>
+            <ul>
+              <li>Mask NFT (tiers) + Patch tokens (slots) + Outfit/Ring Gear por piezas</li>
+              <li>Progression: XP → Nivel → desbloqueo de slots y contenido</li>
+              <li>Integridad competitiva: caps + firma de resultados + loadoutHash</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Seguridad / Integridad</h3>
+            <p>
+              Al equipar, el item queda “lock/escrow” para evitar exploits. Resultados firmados EIP-712 con <code>matchId</code>
+              anti-replay y <code>loadoutHash</code> que ancla el build usado.
+            </p>
+            <ul>
+              <li>Equip = escrow/lock</li>
+              <li>Claim de match con firma autorizada</li>
+              <li>Loadout hash para consistencia client/server</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Contenido & Catálogo</h3>
+            <p>
+              Whitepaper (narrativa) + Technical Spec (GDD + Smart Contracts + Backend + Schemas) + Catálogo versionado.
+              Recomendación: <code>catalog.v1.*</code> inmutable y nuevos cambios en v2/v1.0.1.
+            </p>
+            <ul>
+              <li>Whitepaper: capítulos estilo GitBook</li>
+              <li>Spec: contratos, eventos, flujos, esquemas</li>
+              <li>Catálogo: CSV/JSON (fuente de verdad)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Cómo usar este portal</h3>
+            <p>
+              El sidebar lista todos los documentos. Al hacer click, se carga el Markdown y se muestra aquí.
+              Puedes copiar un link directo como <code>#doc=executive-summary/competitive-integrity.md</code>.
+            </p>
+            <ul>
+              <li>Funciona con rutas relativas (mismo repo)</li>
+              <li>Fallback automático a GitHub RAW</li>
+              <li>Buscar títulos en el sidebar</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Documento cargado -->
+        <section class="docbox">
+          <div class="docmeta">
+            <div class="left">
+              <div class="title" id="docTitle">Inicio</div>
+              <div class="path" id="docPath">—</div>
+            </div>
+            <div class="right">
+              <a class="btn" id="rawBtn" target="_blank" rel="noreferrer">Ver RAW</a>
+            </div>
+          </div>
+
+          <article class="doc" id="doc">
+            <h1>Bienvenido</h1>
+            <p>
+              Selecciona una sección en el sidebar para ver el contenido del whitepaper o del documento técnico.
+            </p>
+            <blockquote>
+              Si algo no carga, revisa que el archivo exista en el repo con el mismo path que aparece en el link.
+            </blockquote>
+          </article>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/common.min.js"></script>
 
   <script>
-    const routes = {
-      "whitepaper/readme": ["README.md", "markdown"],
-      "whitepaper/summary": ["SUMMARY.md", "markdown"],
-      "docs/technical": ["docs/TECHNICAL.md", "markdown"],
-      "docs/catalog": ["docs/CATALOG.md", "markdown"],
-      "catalog/table": ["data/catalog.v1.json", "catalogTable"],
+    // =============================
+    // CONFIG: cambia esto si tu branch o usuario cambian
+    // =============================
+    const CONFIG = {
+      owner: "Kmiru",
+      repo: "masked-wrestlers-whitepaper",
+      branch: "main"
     };
 
-    function setActive(route) {
-      document.querySelectorAll("nav a[data-route]").forEach(a => {
-        a.style.background = (a.dataset.route === route) ? "rgba(127,127,127,.2)" : "";
-      });
+    const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/`;
+    const REPO_URL  = `https://github.com/${CONFIG.owner}/${CONFIG.repo}`;
+
+    // =============================
+    // DOCS: navegación completa (GitBook) + sección Technical
+    // =============================
+    const DOCS = [
+      // Root
+      { group: "Root", title: "Masked Wrestlers Whitepaper", path: "README.md" },
+      { group: "Root", title: "Table of contents", path: "table-of-contents.md" },
+
+      // Executive summary
+      { group: "Executive summary", title: "Executive summary", path: "executive-summary/README.md" },
+      { group: "Executive summary", title: "Masked Wrestlers: an overview", path: "executive-summary/masked-wrestlers-an-overview.md" },
+      { group: "Executive summary", title: "A skill-first 3D arena fighter", path: "executive-summary/a-skill-first-3d-arena-fighter.md" },
+      { group: "Executive summary", title: "Competitive integrity", path: "executive-summary/competitive-integrity.md" },
+      { group: "Executive summary", title: "Powered by Masks, Mask Accessories, and Ring Gear", path: "executive-summary/powered-by-masks-accessories-and-ring-gear.md" },
+      { group: "Executive summary", title: "Tomorrow: the future of Masked Wrestlers", path: "executive-summary/tomorrow-the-future-of-masked-wrestlers.md" },
+
+      // Ecosystem
+      { group: "The Masked Wrestlers ecosystem", title: "The Masked Wrestlers ecosystem", path: "the-masked-wrestlers-ecosystem/README.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Platform", path: "the-masked-wrestlers-ecosystem/platform.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Arena world", path: "the-masked-wrestlers-ecosystem/arena-world.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Marketplace and assets", path: "the-masked-wrestlers-ecosystem/marketplace-and-assets.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Website", path: "the-masked-wrestlers-ecosystem/website.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Masks", path: "the-masked-wrestlers-ecosystem/masks.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Mask Accessories", path: "the-masked-wrestlers-ecosystem/mask-accessories.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Gamification", path: "the-masked-wrestlers-ecosystem/gamification.md" },
+      { group: "The Masked Wrestlers ecosystem", title: "Smart contract architecture", path: "the-masked-wrestlers-ecosystem/smart-contract-architecture.md" },
+
+      // Market overview
+      { group: "Market overview", title: "Market overview", path: "market-overview/README.md" },
+      { group: "Market overview", title: "Competitive fighting games", path: "market-overview/competitive-fighting-games.md" },
+      { group: "Market overview", title: "Web3 gaming and ownership", path: "market-overview/web3-gaming-and-ownership.md" },
+      { group: "Market overview", title: "The NFT market", path: "market-overview/the-nft-market.md" },
+      { group: "Market overview", title: "Market opportunity", path: "market-overview/market-opportunity.md" },
+
+      // Roadmap
+      { group: "Roadmap", title: "Roadmap", path: "roadmap.md" },
+
+      // Tokenomics
+      { group: "Tokenomics", title: "Tokenomics", path: "tokenomics/README.md" },
+      { group: "Tokenomics", title: "Masked Wrestlers NFTs", path: "tokenomics/masked-wrestlers-nfts.md" },
+      { group: "Tokenomics", title: "Patches and seasonal supply", path: "tokenomics/patches-and-seasonal-supply.md" },
+      { group: "Tokenomics", title: "Optional utility token", path: "tokenomics/optional-utility-token.md" },
+
+      // Team
+      { group: "Team and partners", title: "Team and partners", path: "team-and-partners/README.md" },
+      { group: "Team and partners", title: "Team", path: "team-and-partners/team.md" },
+      { group: "Team and partners", title: "Partners", path: "team-and-partners/partners.md" },
+
+      // Legal
+      { group: "Legal", title: "Disclaimer", path: "disclaimer.md" },
+      { group: "Legal", title: "Abbreviations", path: "abbreviations.md" },
+
+      // Technical (añade tus archivos)
+      { group: "Technical", title: "Technical Spec (v1) — GDD + Smart Contracts + Backend", path: "technical/technical.md" },
+      { group: "Technical", title: "Catalog v1 (CSV)", path: "technical/catalog.v1.csv", asCode: true },
+      { group: "Technical", title: "Catalog v1 (JSON)", path: "technical/catalog.v1.json", asCode: true },
+      { group: "Technical", title: "types.ts", path: "technical/types.ts", asCode: true },
+      { group: "Technical", title: "loadCatalog.ts", path: "technical/loadCatalog.ts", asCode: true },
+      { group: "Technical", title: "ItemIds.ts", path: "technical/ItemIds.ts", asCode: true },
+    ];
+
+    // =============================
+    // Utils
+    // =============================
+    const $ = (sel) => document.querySelector(sel);
+
+    function safePath(p){
+      // Evita rutas raras/injection
+      const ok = /^[a-zA-Z0-9_\-./]+$/.test(p);
+      return ok ? p : null;
     }
 
-    async function loadMarkdown(p) {
-      const res = await fetch(p, { cache: "no-store" });
-      if (!res.ok) throw new Error(`Failed to load ${p}: ${res.status}`);
-      return marked.parse(await res.text());
+    async function fetchText(url){
+      const res = await fetch(url, { cache: "no-store" });
+      if(!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+      return await res.text();
     }
 
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
-    }
+    async function fetchWithFallback(path){
+      const sp = safePath(path);
+      if(!sp) throw new Error("Invalid path");
 
-    function renderTable(items) {
-      const rows = items.map(it => `
-        <tr>
-          <td>${it.id}</td>
-          <td>${escapeHtml(it.type)}</td>
-          <td>${escapeHtml(it.tier)}</td>
-          <td>${escapeHtml(it.slot)}</td>
-          <td>${escapeHtml(it.name)}</td>
-          <td>${it.minLevel ?? 1}</td>
-          <td><pre>${escapeHtml(JSON.stringify(it.mods ?? {}, null, 0))}</pre></td>
-          <td><pre>${escapeHtml(JSON.stringify(it.ability ?? {}, null, 0))}</pre></td>
-          <td><pre>${escapeHtml(JSON.stringify(it.tradeoffs ?? {}, null, 0))}</pre></td>
-        </tr>
-      `).join("");
-
-      return `
-        <h1>Catalog v1</h1>
-        <p class="muted">Loaded from <code>data/catalog.v1.json</code> — ${items.length} items.</p>
-        <input id="q" placeholder="Search by name / tag…" style="width:100%;padding:10px;border-radius:10px;border:1px solid #444;background:transparent;color:inherit" />
-        <div style="overflow:auto;margin-top:12px">
-          <table>
-            <thead>
-              <tr>
-                <th>ID</th><th>Type</th><th>Tier</th><th>Slot</th><th>Name</th><th>Min Lvl</th><th>Mods</th><th>Ability</th><th>Tradeoffs</th>
-              </tr>
-            </thead>
-            <tbody id="tbody">${rows}</tbody>
-          </table>
-        </div>
-      `;
-    }
-
-    async function loadCatalogTable(p) {
-      const res = await fetch(p, { cache: "no-store" });
-      if (!res.ok) throw new Error(`Failed to load ${p}: ${res.status}`);
-      const data = await res.json();
-      const items = (data.items ?? []).slice().sort((a,b)=>a.id-b.id);
-      document.getElementById("content").innerHTML = renderTable(items);
-
-      const tbody = document.getElementById("tbody");
-      const q = document.getElementById("q");
-      const all = items;
-
-      q.addEventListener("input", () => {
-        const s = q.value.trim().toLowerCase();
-        const filtered = !s ? all : all.filter(it => JSON.stringify(it).toLowerCase().includes(s));
-        tbody.innerHTML = filtered.map(it => `
-          <tr>
-            <td>${it.id}</td>
-            <td>${escapeHtml(it.type)}</td>
-            <td>${escapeHtml(it.tier)}</td>
-            <td>${escapeHtml(it.slot)}</td>
-            <td>${escapeHtml(it.name)}</td>
-            <td>${it.minLevel ?? 1}</td>
-            <td><pre>${escapeHtml(JSON.stringify(it.mods ?? {}, null, 0))}</pre></td>
-            <td><pre>${escapeHtml(JSON.stringify(it.ability ?? {}, null, 0))}</pre></td>
-            <td><pre>${escapeHtml(JSON.stringify(it.tradeoffs ?? {}, null, 0))}</pre></td>
-          </tr>
-        `).join("");
-      });
-    }
-
-    async function render() {
-      const route = (location.hash || "#/whitepaper/readme").replace(/^#\//, "");
-      const entry = routes[route];
-      if (!entry) {
-        document.getElementById("content").innerHTML = "<h1>Not found</h1>";
-        return;
+      // 1) Primero intenta relativo (ideal para GitHub Pages)
+      try{
+        return await fetchText(sp);
+      }catch(_){
+        // 2) Fallback a GitHub RAW
+        return await fetchText(RAW_BASE + sp);
       }
-      setActive(route);
+    }
 
-      const [p, kind] = entry;
-      try {
-        if (kind === "markdown") {
-          document.getElementById("content").innerHTML = await loadMarkdown(p);
-        } else {
-          await loadCatalogTable(p);
+    function setActive(path){
+      document.querySelectorAll("a.item").forEach(a => a.classList.remove("active"));
+      const el = document.querySelector(`a.item[data-path="${CSS.escape(path)}"]`);
+      if(el) el.classList.add("active");
+    }
+
+    function groupDocs(filteredDocs){
+      const map = new Map();
+      for(const d of filteredDocs){
+        if(!map.has(d.group)) map.set(d.group, []);
+        map.get(d.group).push(d);
+      }
+      return map;
+    }
+
+    function buildNav(filterText=""){
+      const nav = $("#nav");
+      nav.innerHTML = "";
+
+      const q = filterText.trim().toLowerCase();
+      const filtered = q
+        ? DOCS.filter(d => (d.title + " " + d.group).toLowerCase().includes(q))
+        : DOCS;
+
+      const grouped = groupDocs(filtered);
+
+      for(const [group, docs] of grouped.entries()){
+        const wrap = document.createElement("div");
+        wrap.className = "navgroup";
+        wrap.innerHTML = `<div class="title">${group}</div>`;
+
+        const list = document.createElement("div");
+        list.className = "sub nav";
+
+        for(const d of docs){
+          const a = document.createElement("a");
+          a.className = "item";
+          a.href = `#doc=${encodeURIComponent(d.path)}`;
+          a.dataset.path = d.path;
+          a.textContent = d.title;
+          list.appendChild(a);
         }
-      } catch (e) {
-        document.getElementById("content").innerHTML = `<h1>Error</h1><pre>${escapeHtml(e?.message ?? String(e))}</pre>`;
+
+        wrap.appendChild(list);
+        nav.appendChild(wrap);
       }
     }
 
-    window.addEventListener("hashchange", render);
-    render();
+    function renderMarkdownTo(el, md){
+      // marked options
+      marked.setOptions({
+        gfm: true,
+        breaks: false
+      });
+
+      const html = marked.parse(md);
+      el.innerHTML = html;
+
+      // highlight code blocks
+      el.querySelectorAll("pre code").forEach((block) => {
+        try { hljs.highlightElement(block); } catch(e) {}
+      });
+    }
+
+    function renderCodeTo(el, text){
+      el.innerHTML = `<pre><code>${escapeHtml(text)}</code></pre>`;
+      el.querySelectorAll("pre code").forEach((block) => {
+        try { hljs.highlightElement(block); } catch(e) {}
+      });
+    }
+
+    function escapeHtml(s){
+      return s
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+
+    function getDocFromHash(){
+      const hash = window.location.hash || "";
+      const m = hash.match(/#doc=([^&]+)/);
+      if(!m) return null;
+      try{
+        return decodeURIComponent(m[1]);
+      }catch(_){
+        return null;
+      }
+    }
+
+    async function loadDoc(path){
+      const doc = DOCS.find(d => d.path === path) || { title: path, path, asCode: false };
+      const sp = safePath(path);
+      if(!sp) return;
+
+      $("#docTitle").textContent = doc.title || path;
+      $("#docPath").textContent = path;
+
+      const rawUrl = RAW_BASE + sp;
+      $("#rawBtn").href = rawUrl;
+
+      setActive(path);
+
+      const container = $("#doc");
+      container.innerHTML = "<p>Cargando…</p>";
+
+      try{
+        const text = await fetchWithFallback(sp);
+
+        // Si el doc se marcó como asCode (CSV/JSON/TS), muéstralo como code
+        if(doc.asCode){
+          renderCodeTo(container, text);
+        }else{
+          renderMarkdownTo(container, text);
+        }
+
+        // scroll al top del doc
+        container.scrollIntoView({ behavior: "smooth", block: "start" });
+      }catch(err){
+        container.innerHTML = `
+          <h2>Error cargando documento</h2>
+          <p>No pude cargar: <code>${escapeHtml(path)}</code></p>
+          <p style="color:#64748b">Detalle: ${escapeHtml(String(err))}</p>
+          <p>Revisa que el archivo exista con ese path en tu repo.</p>
+        `;
+      }
+    }
+
+    // =============================
+    // Init
+    // =============================
+    $("#repoLink").href = REPO_URL;
+    $("#printBtn").addEventListener("click", () => window.print());
+    $("#homeBtn").addEventListener("click", () => {
+      history.pushState(null, "", "#");
+      $("#docTitle").textContent = "Inicio";
+      $("#docPath").textContent = "—";
+      $("#rawBtn").href = REPO_URL;
+      $("#doc").innerHTML = `
+        <h1>Inicio</h1>
+        <p>Usa el sidebar para abrir cualquier sección del whitepaper o el spec técnico.</p>
+        <blockquote>Tip: si estás en GitHub Pages, esto funciona sin GitBook/Next.js.</blockquote>
+      `;
+      document.querySelectorAll("a.item").forEach(a => a.classList.remove("active"));
+    });
+
+    buildNav();
+
+    $("#search").addEventListener("input", (e) => buildNav(e.target.value));
+
+    window.addEventListener("hashchange", () => {
+      const p = getDocFromHash();
+      if(p) loadDoc(p);
+    });
+
+    // Cargar doc inicial si viene en la URL
+    const initial = getDocFromHash();
+    if(initial) loadDoc(initial);
   </script>
 </body>
 </html>
+
