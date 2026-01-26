@@ -4,8 +4,8 @@ Your identity in Masked Wrestlers is built like a real persona — modular, expr
 
 Your loadout is made of:
 1) **1 Mask**
-2) optional **Mask Accessories** (slot-based)
-3) optional **Ring Gear** (boots / tights / shirt / cape)
+2) **Mask Accessories** (skills/modifiers)
+3) **Ring Gear** (boots / tights / top / cape)
 
 ---
 
