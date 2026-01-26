@@ -18,14 +18,14 @@ Ownership is about **control and flexibility**—not forcing you to buy power.
 Your build is your brand. NFTs make that identity persistent:
 - Your **Mask NFT** is your core persona (tiered)
 - **Mask Accessories (Patches)** customize your playstyle within caps/tradeoffs
-- **Ring Gear** lets you express style (boots/tights/shirt/cape)
+- **Ring Gear** lets you express style (boots/tights/top/cape)
 
 Over time, you can curate a look and a build that feels like *you*.
 
 ---
 
 ### 3) You can earn progression AND collect
-Even if progression comes from playing (XP → Level 1–1000), NFTs can add a **collection loop**:
+Even if progression comes from playing (XP → Level 1–1000), NFTs can add **modifiers**:
 - Seasonal accessory drops (optional ownership)
 - Cosmetic variants tied to themes/events
 - Gear sets that represent seasons, tournaments, or milestones
@@ -39,7 +39,7 @@ This gives you more reasons to log in, grind, and refine your style.
 ### A) Equip them to play with your chosen build
 - Equip **1 Mask NFT**
 - Equip **Patches** in available slots (Trait / Moves / Power)
-- Equip **Ring Gear** in 4 slots (boots / tights / shirt / cape)
+- Equip **Ring Gear** in 4 slots (boots / tights / top / cape)
 
 Your equipped items define your build—always bounded by:
 - tier rules
@@ -89,7 +89,7 @@ This prevents exploit loops like “equip → win → immediately sell → repea
 
 - **In-game:** equip, build, play, unlock progression
 - **Website:** official links, contract addresses, docs, drops
-- **Marketplace (optional):** trade supported items under the rules
+- **Marketplace:** trade supported items under the rules
 
 ---
 
