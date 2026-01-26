@@ -1,3 +1,81 @@
+# Patches & seasonal supply (Skills you build with)
+
+Patches are where the game gets personal.
+They add **skills/abilities and modifiers** that shape how you fight.
+
+They’re designed to create:
+- specialization paths (pressure, control, defense, mixups)
+- matchup strategy
+- a meta that evolves through seasons
+
+---
+
+## Patch structure (clean and competitive)
+
+Patch slots:
+- **Trait** (playstyle tuning)
+- **Moves** (kit expression)
+- **Power** (high-tier expression, still bounded)
+
+Tier rules keep everything readable:
+- Patch tier must match Mask tier
+- Slot access depends on Mask tier + progression gates
+
+Example gates used for fairness:
+- Common Trait begins at **Level ≥ 8**
+- Power requires **Level ≥ 50**
+
+---
+
+## Why seasons exist (the “living meta” reason)
+
+Because players change builds.
+A lot.
+
+Even if there were a theoretical “max slots used once” across the whole Genesis supply:
+- 700 Common × 1 slot = 700
+- 250 Rare × 2 slots = 500
+- 50 Legendary × 3 slots = 150
+= **1,350 total patch slots** (single pass)
+
+In reality, patch demand is higher because:
+- players test multiple styles
+- balance updates shift the meta
+- new players join continuously
+- seasonal content refreshes goals
+
+Seasonal releases keep the ecosystem active instead of frozen.
+
+---
+
+## Concrete Season 0 supply target (launch / first year)
+
+**25,000 total Patches**
+- **17,500 Common (70%)**
+- **6,250 Rare (25%)**
+- **1,250 Legendary (5%)**
+
+Then, for ongoing seasons:
+- **5,000–12,000 Patches per season**
+Scaled based on demand and player growth.
+
+---
+
+## Why this doesn’t become pay-to-win
+Because supply doesn’t override rules.
+
+Patches remain fair through:
+- hard slot limits (you can only slot what your Mask tier supports)
+- level gates (access is earned through play)
+- caps + tradeoffs (no “stack forever”)
+- counterplay (opponents always have answers)
+
+This is how you get a market that stays exciting
+*without* breaking competitive integrity.
+
+
+
+
 # Build Math (How many loadouts are possible?)
 
 This page is here for one reason:
