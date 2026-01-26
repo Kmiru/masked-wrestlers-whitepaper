@@ -1,0 +1,2104 @@
+{
+  "version": "v1.0.0",
+  "idRanges": {
+    "patch_common_trait": [
+      11000,
+      11999
+    ],
+    "patch_rare_trait": [
+      12000,
+      12999
+    ],
+    "patch_rare_moves": [
+      13000,
+      13999
+    ],
+    "patch_legendary_trait": [
+      21000,
+      21999
+    ],
+    "patch_legendary_moves": [
+      22000,
+      22999
+    ],
+    "patch_legendary_power": [
+      23000,
+      23999
+    ],
+    "outfit_boots": [
+      31000,
+      31999
+    ],
+    "outfit_tights": [
+      32000,
+      32999
+    ],
+    "outfit_shirt": [
+      33000,
+      33999
+    ],
+    "outfit_cape": [
+      34000,
+      34999
+    ]
+  },
+  "items": [
+    {
+      "id": 11001,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Lightweight",
+      "minLevel": 8,
+      "mods": {
+        "SPD_pct": 5,
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 11002,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Bruto",
+      "minLevel": 8,
+      "mods": {
+        "STR_pct": 5,
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 11003,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Muralla",
+      "minLevel": 8,
+      "mods": {
+        "DEF_pct": 6,
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 11004,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Cardio",
+      "minLevel": 8,
+      "mods": {
+        "STA_pct": 6,
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 11005,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Reacción",
+      "minLevel": 8,
+      "mods": {
+        "SPD_pct": 4,
+        "DEF_pct": 2,
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 11006,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Impacto",
+      "minLevel": 8,
+      "mods": {
+        "STR_pct": 4,
+        "STA_pct": 2,
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 11007,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Templado",
+      "minLevel": 8,
+      "ability": {
+        "tag": "combo_damage_taken_pct",
+        "value": -4
+      },
+      "tradeoffs": {
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 11008,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Recuperación",
+      "minLevel": 8,
+      "ability": {
+        "tag": "sta_regen_outside_pressure_pct",
+        "value": 8
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 11009,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Centro de gravedad",
+      "minLevel": 8,
+      "mods": {
+        "DEF_pct": 3
+      },
+      "ability": {
+        "tag": "knockback_taken_pct",
+        "value": -6
+      },
+      "tradeoffs": {
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 11010,
+      "type": "PATCH",
+      "tier": "COMMON",
+      "slot": "TRAIT",
+      "name": "Agarre firme",
+      "minLevel": 8,
+      "ability": {
+        "tag": "throw_damage_pct",
+        "value": 4
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 12001,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Atleta",
+      "minLevel": 1,
+      "mods": {
+        "SPD_pct": 8,
+        "DEF_pct": -4
+      }
+    },
+    {
+      "id": 12002,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Demoledor",
+      "minLevel": 1,
+      "mods": {
+        "STR_pct": 8,
+        "SPD_pct": -4
+      }
+    },
+    {
+      "id": 12003,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Armadura",
+      "minLevel": 1,
+      "mods": {
+        "DEF_pct": 9,
+        "SPD_pct": -5
+      }
+    },
+    {
+      "id": 12004,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Pulmón de acero",
+      "minLevel": 1,
+      "mods": {
+        "STA_pct": 9,
+        "STR_pct": -4
+      }
+    },
+    {
+      "id": 12005,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Precisión",
+      "minLevel": 1,
+      "ability": {
+        "tag": "counter_damage_pct",
+        "value": 6
+      },
+      "tradeoffs": {
+        "STA_pct": -3
+      }
+    },
+    {
+      "id": 12006,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Contraataque",
+      "minLevel": 1,
+      "ability": {
+        "tag": "post_block_damage_pct",
+        "value": 7
+      },
+      "tradeoffs": {
+        "SPD_pct": -4
+      }
+    },
+    {
+      "id": 12007,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Pie firme",
+      "minLevel": 1,
+      "ability": {
+        "tag": "throw_damage_taken_pct",
+        "value": -7
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 12008,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Explosivo",
+      "minLevel": 1,
+      "ability": {
+        "tag": "round_start_damage_pct",
+        "value": 7,
+        "durationSec": 10
+      },
+      "tradeoffs": {
+        "STA_pct": -4
+      }
+    },
+    {
+      "id": 12009,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Evasivo",
+      "minLevel": 1,
+      "ability": {
+        "tag": "dodge_window_pct",
+        "value": 7
+      },
+      "tradeoffs": {
+        "DEF_pct": -4
+      }
+    },
+    {
+      "id": 12010,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "TRAIT",
+      "name": "Disciplina",
+      "minLevel": 1,
+      "ability": {
+        "tag": "moves_sta_cost_pct",
+        "value": -6
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 13001,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Cobra String",
+      "minLevel": 1,
+      "kit": {
+        "tag": "combo_route",
+        "value": "cobra_3hit_fast"
+      }
+    },
+    {
+      "id": 13002,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Uppercut Cancel",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "uppercut_cancelable"
+      }
+    },
+    {
+      "id": 13003,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Low Sweep",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "low_sweep_knockdown"
+      }
+    },
+    {
+      "id": 13004,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Guard Breaker",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "guard_break_charge_1s"
+      }
+    },
+    {
+      "id": 13005,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Throw Extension",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "throw_followup_on_failtech"
+      }
+    },
+    {
+      "id": 13006,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Backstep Strike",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "backstep_whiff_punish"
+      }
+    },
+    {
+      "id": 13007,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Parry Window",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "parry_strict"
+      }
+    },
+    {
+      "id": 13008,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Air Starter",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "air_combo_starter"
+      }
+    },
+    {
+      "id": 13009,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Wall Bounce",
+      "minLevel": 1,
+      "kit": {
+        "tag": "combo_property",
+        "value": "wall_bounce_near_edge"
+      }
+    },
+    {
+      "id": 13010,
+      "type": "PATCH",
+      "tier": "RARE",
+      "slot": "MOVES",
+      "name": "Lariat Finisher",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "lariat_finisher_high_risk"
+      }
+    },
+    {
+      "id": 21001,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Controlled Fury",
+      "minLevel": 1,
+      "mods": {
+        "STR_pct": 12,
+        "DEF_pct": -7
+      }
+    },
+    {
+      "id": 21002,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Sombra veloz",
+      "minLevel": 1,
+      "mods": {
+        "SPD_pct": 12,
+        "STR_pct": -7
+      }
+    },
+    {
+      "id": 21003,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Bastión",
+      "minLevel": 1,
+      "mods": {
+        "DEF_pct": 12,
+        "SPD_pct": -8
+      }
+    },
+    {
+      "id": 21004,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Motor eterno",
+      "minLevel": 1,
+      "mods": {
+        "STA_pct": 12,
+        "STR_pct": -7
+      }
+    },
+    {
+      "id": 21005,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Asesino técnico",
+      "minLevel": 1,
+      "ability": {
+        "tag": "counter_damage_pct",
+        "value": 10
+      },
+      "tradeoffs": {
+        "STA_pct": -6
+      }
+    },
+    {
+      "id": 21006,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Gladiador",
+      "minLevel": 1,
+      "mods": {
+        "STR_pct": 10,
+        "DEF_pct": 4
+      },
+      "cooldowns": {
+        "SPD_pct": -8
+      }
+    },
+    {
+      "id": 21007,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Duelista",
+      "minLevel": 1,
+      "mods": {
+        "SPD_pct": 10,
+        "STR_pct": 4
+      },
+      "cooldowns": {
+        "DEF_pct": -8
+      }
+    },
+    {
+      "id": 21008,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Hierro vivo",
+      "minLevel": 1,
+      "ability": {
+        "tag": "stagger_taken_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "SPD_pct": -6
+      }
+    },
+    {
+      "id": 21009,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Maestría",
+      "minLevel": 1,
+      "ability": {
+        "tag": "moves_sta_cost_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "STR_pct": -6
+      }
+    },
+    {
+      "id": 21010,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "TRAIT",
+      "name": "Instinto",
+      "minLevel": 1,
+      "ability": {
+        "tag": "dodge_window_pct",
+        "value": 8
+      },
+      "tradeoffs": {
+        "DEF_pct": -6
+      }
+    },
+    {
+      "id": 22001,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Jaguar Routes",
+      "minLevel": 1,
+      "kit": {
+        "tag": "combo_route",
+        "value": "jaguar_mixup_routes"
+      }
+    },
+    {
+      "id": 22002,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Heavy Launcher",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "heavy_launcher_punishable"
+      }
+    },
+    {
+      "id": 22003,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Feint System",
+      "minLevel": 1,
+      "kit": {
+        "tag": "system_unlock",
+        "value": "feint_system_sta_based"
+      }
+    },
+    {
+      "id": 22004,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Command Grab",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "command_grab"
+      }
+    },
+    {
+      "id": 22005,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Armor Move",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "one_hit_armor_high_sta"
+      }
+    },
+    {
+      "id": 22006,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Wake-up Reversal",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "wakeup_reversal_baitable"
+      }
+    },
+    {
+      "id": 22007,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Teleport Step",
+      "minLevel": 1,
+      "kit": {
+        "tag": "mobility_unlock",
+        "value": "teleport_step_sta_cost"
+      }
+    },
+    {
+      "id": 22008,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Corner Trap",
+      "minLevel": 1,
+      "kit": {
+        "tag": "pressure_unlock",
+        "value": "corner_trap_string"
+      }
+    },
+    {
+      "id": 22009,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Air Finisher",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "air_finisher"
+      }
+    },
+    {
+      "id": 22010,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "MOVES",
+      "name": "Stance Change",
+      "minLevel": 1,
+      "kit": {
+        "tag": "system_unlock",
+        "value": "stance_two_move_sets"
+      }
+    },
+    {
+      "id": 23001,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Fire — Burn",
+      "minLevel": 50,
+      "ability": {
+        "tag": "dot",
+        "durationSec": 6,
+        "valuePctPerSec": 1.0
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 45
+      }
+    },
+    {
+      "id": 23002,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Aire — Air Dash Extra",
+      "minLevel": 50,
+      "ability": {
+        "tag": "air_dash_extra",
+        "durationSec": 5,
+        "charges": 1
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 35
+      }
+    },
+    {
+      "id": 23003,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Tierra — Escudo",
+      "minLevel": 50,
+      "ability": {
+        "tag": "damage_reduction",
+        "durationSec": 4,
+        "valuePct": 30
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 50
+      }
+    },
+    {
+      "id": 23004,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Agua — Curación",
+      "minLevel": 50,
+      "ability": {
+        "tag": "heal",
+        "durationSec": 4,
+        "valuePct": 8
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 60
+      }
+    },
+    {
+      "id": 23005,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Lightning — Micro Stun",
+      "minLevel": 50,
+      "ability": {
+        "tag": "micro_stun_on_confirm",
+        "valueFrames": 12
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 55
+      }
+    },
+    {
+      "id": 23006,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Sombra — Ocultar intención",
+      "minLevel": 50,
+      "ability": {
+        "tag": "intent_mask",
+        "durationSec": 3
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 45
+      }
+    },
+    {
+      "id": 23007,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Magia — Silencio",
+      "minLevel": 50,
+      "ability": {
+        "tag": "power_seal_enemy",
+        "durationSec": 6
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 60
+      }
+    },
+    {
+      "id": 23008,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Luz — Purificar",
+      "minLevel": 50,
+      "ability": {
+        "tag": "cleanse"
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 50
+      }
+    },
+    {
+      "id": 23009,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Hielo — Slow",
+      "minLevel": 50,
+      "ability": {
+        "tag": "slow",
+        "durationSec": 5,
+        "valuePct": 10
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 55
+      }
+    },
+    {
+      "id": 23010,
+      "type": "PATCH",
+      "tier": "LEGENDARY",
+      "slot": "POWER",
+      "name": "Sangre — Berserk",
+      "minLevel": 50,
+      "ability": {
+        "tag": "berserk",
+        "durationSec": 6,
+        "STR_pct": 12,
+        "DEF_pct": -10
+      },
+      "cooldowns": {
+        "stamina": 30
+      },
+      "tradeoffs": {
+        "sec": 60
+      }
+    },
+    {
+      "id": 31001,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Sprinter Boots",
+      "minLevel": 1,
+      "mods": {
+        "ground_mobility_pct": 6
+      },
+      "tradeoffs": {
+        "DEF_pct": -3
+      }
+    },
+    {
+      "id": 31002,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Anchor Boots",
+      "minLevel": 1,
+      "mods": {
+        "ground_mobility_pct": -2,
+        "anti_pushback_pct": 6
+      },
+      "tradeoffs": {
+        "sta_regen_pct": -2
+      }
+    },
+    {
+      "id": 31003,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Feint Boots",
+      "minLevel": 1,
+      "ability": {
+        "tag": "feint_sta_cost_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 31004,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Pivot Boots",
+      "minLevel": 1,
+      "ability": {
+        "tag": "turn_speed_pct",
+        "value": 8
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 31005,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Dash Saver",
+      "minLevel": 1,
+      "ability": {
+        "tag": "dash_sta_cost_flat",
+        "value": -1
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 31006,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Whiff Hunter",
+      "minLevel": 1,
+      "ability": {
+        "tag": "backstep_speed_pct",
+        "value": 4
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 31007,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Grease Soles",
+      "minLevel": 1,
+      "mods": {
+        "dash_distance_pct": 6
+      },
+      "tradeoffs": {
+        "dash_sta_cost_pct": 6
+      }
+    },
+    {
+      "id": 31008,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Iron Heel",
+      "minLevel": 1,
+      "ability": {
+        "tag": "knockback_taken_pct",
+        "value": -6
+      },
+      "tradeoffs": {
+        "SPD_pct": -3
+      }
+    },
+    {
+      "id": 31009,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Slip Counter",
+      "minLevel": 1,
+      "ability": {
+        "tag": "perfect_block_sta_gain_flat",
+        "value": 3
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 31010,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Sprint Burst",
+      "minLevel": 1,
+      "ability": {
+        "tag": "mobility_burst",
+        "value_pct": 8,
+        "durationSec": 2,
+        "staCost": 8,
+        "cooldownSec": 12
+      },
+      "tradeoffs": {}
+    },
+    {
+      "id": 31011,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Low Profile",
+      "minLevel": 1,
+      "ability": {
+        "tag": "hurtbox_walk_lowered",
+        "value": 1
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 31012,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Step Cancel",
+      "minLevel": 1,
+      "ability": {
+        "tag": "micro_step_cancel",
+        "staCost": 6
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 31013,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Stamina Tread",
+      "minLevel": 1,
+      "ability": {
+        "tag": "sta_regen_outside_pressure_pct",
+        "value": 6
+      },
+      "tradeoffs": {
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 31014,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Guard Step",
+      "minLevel": 1,
+      "ability": {
+        "tag": "block_walk_speed_pct",
+        "value": 6
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 31015,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Precision Foot",
+      "minLevel": 1,
+      "ability": {
+        "tag": "input_leniency_pct",
+        "value": 3
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 31016,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Heavy Grip",
+      "minLevel": 1,
+      "ability": {
+        "tag": "tech_push_resist_pct",
+        "value": 6
+      },
+      "tradeoffs": {
+        "ground_mobility_pct": -2
+      }
+    },
+    {
+      "id": 31017,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Corner Escape",
+      "minLevel": 1,
+      "ability": {
+        "tag": "backdash_pushback_pct",
+        "value": 6
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 31018,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Tempo Boots",
+      "minLevel": 1,
+      "ability": {
+        "tag": "jab_hit_dash_sta_discount",
+        "value_flat": 1,
+        "durationSec": 5
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 31019,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Anti-Trip",
+      "minLevel": 1,
+      "ability": {
+        "tag": "sweep_damage_taken_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 31020,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "BOOTS",
+      "name": "Duel Boots",
+      "minLevel": 1,
+      "mods": {
+        "SPD_pct": 3,
+        "DEF_pct": 2
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 32001,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "High Jump Tights",
+      "minLevel": 1,
+      "mods": {
+        "jump_height_pct": 10
+      },
+      "tradeoffs": {
+        "DEF_pct": -4
+      }
+    },
+    {
+      "id": 32002,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Air Control Tights",
+      "minLevel": 1,
+      "mods": {
+        "air_control_pct": 12
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 32003,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Short-Hop Master",
+      "minLevel": 1,
+      "ability": {
+        "tag": "short_hop_consistency",
+        "value": 1
+      },
+      "tradeoffs": {
+        "ground_mobility_pct": -2
+      }
+    },
+    {
+      "id": 32004,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Landing Soft",
+      "minLevel": 1,
+      "ability": {
+        "tag": "landing_recovery_frame_bonus",
+        "value": 1
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 32005,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Anti-Air Guard",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_damage_taken_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "ground_mobility_pct": -2
+      }
+    },
+    {
+      "id": 32006,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Second Step",
+      "minLevel": 1,
+      "ability": {
+        "tag": "double_jump",
+        "charges": 1,
+        "staCost": 18
+      },
+      "tradeoffs": {
+        "DEF_pct": -3
+      }
+    },
+    {
+      "id": 32007,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Fast Fall",
+      "minLevel": 1,
+      "ability": {
+        "tag": "fast_fall_control_pct",
+        "value": 10
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 32008,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Hover Lite",
+      "minLevel": 1,
+      "ability": {
+        "tag": "micro_hover",
+        "durationSec": 0.8,
+        "staCost": 12,
+        "cooldownSec": 10
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 32009,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Knee Drive",
+      "minLevel": 1,
+      "ability": {
+        "tag": "jump_attack_reach_pct",
+        "value": 6
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 32010,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Air Brake",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_brake",
+        "staCost": 8
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 32011,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Wall Kick",
+      "minLevel": 1,
+      "ability": {
+        "tag": "wall_jump",
+        "charges": 1,
+        "staCost": 15
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 32012,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Jump Economy",
+      "minLevel": 1,
+      "ability": {
+        "tag": "jump_sta_cost_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 32013,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Air Tech",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_tech_assist",
+        "value": 1
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 32014,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Sky Angles",
+      "minLevel": 1,
+      "ability": {
+        "tag": "jump_angle_control",
+        "value": 1
+      },
+      "tradeoffs": {
+        "ground_mobility_pct": -2
+      }
+    },
+    {
+      "id": 32015,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Dive Prep",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "divekick_light"
+      },
+      "counterplay": {
+        "DEF_pct": -3
+      }
+    },
+    {
+      "id": 32016,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Float Control",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_time_pct",
+        "value": 8
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 32017,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Anti-Gravity",
+      "minLevel": 1,
+      "mods": {
+        "jump_height_pct": 6,
+        "air_control_pct": 6
+      },
+      "tradeoffs": {
+        "DEF_pct": -4
+      }
+    },
+    {
+      "id": 32018,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Burst Leap",
+      "minLevel": 1,
+      "ability": {
+        "tag": "burst_leap",
+        "value": 1,
+        "staCost": 10,
+        "cooldownSec": 12
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 32019,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Air Parry Assist",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_parry_window_pct",
+        "value": 3
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 32020,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "TIGHTS",
+      "name": "Acrobat",
+      "minLevel": 1,
+      "mods": {
+        "air_mobility_pct": 4,
+        "ground_mobility_pct": 4
+      },
+      "tradeoffs": {
+        "DEF_pct": -4
+      }
+    },
+    {
+      "id": 33001,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Guard Shirt",
+      "minLevel": 1,
+      "ability": {
+        "tag": "chip_damage_taken_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "ground_mobility_pct": -3
+      }
+    },
+    {
+      "id": 33002,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Stagger Shirt",
+      "minLevel": 1,
+      "ability": {
+        "tag": "stagger_taken_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "sta_regen_pct": -6
+      }
+    },
+    {
+      "id": 33003,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Pressure Shirt",
+      "minLevel": 1,
+      "ability": {
+        "tag": "block_sta_cost_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "throw_damage_taken_pct": 3
+      }
+    },
+    {
+      "id": 33004,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Recovery Shirt",
+      "minLevel": 1,
+      "ability": {
+        "tag": "sta_regen_outside_pressure_pct",
+        "value": 10
+      },
+      "tradeoffs": {
+        "DEF_pct": -3
+      }
+    },
+    {
+      "id": 33005,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Fortified Tee",
+      "minLevel": 1,
+      "mods": {
+        "DEF_pct": 6
+      },
+      "tradeoffs": {
+        "SPD_pct": -3
+      }
+    },
+    {
+      "id": 33006,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Anti-Burst",
+      "minLevel": 1,
+      "ability": {
+        "tag": "long_string_damage_taken_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 33007,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Grapple Padding",
+      "minLevel": 1,
+      "ability": {
+        "tag": "throw_damage_taken_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 33008,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Stoic",
+      "minLevel": 1,
+      "ability": {
+        "tag": "block_pushback_taken_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 33009,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Guard Break Resist",
+      "minLevel": 1,
+      "ability": {
+        "tag": "guard_meter_pct",
+        "value": 8
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 33010,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Calm Breath",
+      "minLevel": 1,
+      "ability": {
+        "tag": "idle_sta_gain_flat",
+        "value": 6,
+        "afterSec": 2
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 33011,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Chip Convert",
+      "minLevel": 1,
+      "ability": {
+        "tag": "chip_to_sta_convert_pct",
+        "value": 30
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 33012,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Pain Tolerance",
+      "minLevel": 1,
+      "ability": {
+        "tag": "damage_taken_pct",
+        "value": -6
+      },
+      "tradeoffs": {
+        "cancel_sta_cost_pct": 4
+      }
+    },
+    {
+      "id": 33013,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Anti-Air Plate",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_damage_taken_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "SPD_pct": -2
+      }
+    },
+    {
+      "id": 33014,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Frame Stable",
+      "minLevel": 1,
+      "ability": {
+        "tag": "whiff_penalty_pct",
+        "value": -6
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 33015,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Cleanse Cloth",
+      "minLevel": 1,
+      "ability": {
+        "tag": "debuff_duration_pct",
+        "value": -20
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 33016,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Heavy Weave",
+      "minLevel": 1,
+      "mods": {
+        "DEF_pct": 8
+      },
+      "tradeoffs": {
+        "SPD_pct": -5
+      }
+    },
+    {
+      "id": 33017,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Counter Guard",
+      "minLevel": 1,
+      "ability": {
+        "tag": "perfect_block_next_hit_damage_pct",
+        "value": 2,
+        "durationSec": 5
+      },
+      "tradeoffs": {
+        "STA_pct": -2
+      }
+    },
+    {
+      "id": 33018,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Stamina Shield",
+      "minLevel": 1,
+      "ability": {
+        "tag": "block_sta_cost_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "SPD_pct": -3
+      }
+    },
+    {
+      "id": 33019,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Tempo Armor",
+      "minLevel": 1,
+      "ability": {
+        "tag": "soft_armor_vs_jab",
+        "cooldownSec": 20
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 33020,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "SHIRT",
+      "name": "Duel Shirt",
+      "minLevel": 1,
+      "mods": {
+        "DEF_pct": 3,
+        "STA_pct": 3
+      },
+      "tradeoffs": {
+        "SPD_pct": -3
+      }
+    },
+    {
+      "id": 34001,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Glide Cape",
+      "minLevel": 1,
+      "ability": {
+        "tag": "glide",
+        "durationSec": 2,
+        "staCost": 12,
+        "cooldownSec": 10
+      },
+      "tradeoffs": {
+        "cannot_attack_while_active": 1
+      }
+    },
+    {
+      "id": 34002,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Air Dash Cape",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_dash_extra",
+        "charges": 1,
+        "durationSec": 5,
+        "staCost": 15,
+        "cooldownSec": 10
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 34003,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Hover Cape",
+      "minLevel": 50,
+      "ability": {
+        "tag": "hover",
+        "durationSec": 3,
+        "staCost": 30,
+        "cooldownSec": 45
+      },
+      "tradeoffs": {
+        "vulnerable_to_anti_air": 1
+      }
+    },
+    {
+      "id": 34004,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Dive Cape",
+      "minLevel": 1,
+      "kit": {
+        "tag": "move_unlock",
+        "value": "divekick_light"
+      },
+      "counterplay": {
+        "DEF_pct": -4
+      }
+    },
+    {
+      "id": 34005,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Updraft",
+      "minLevel": 1,
+      "ability": {
+        "tag": "mini_lift",
+        "durationSec": 1,
+        "staCost": 18,
+        "cooldownSec": 14
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 34006,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Feather Back",
+      "minLevel": 1,
+      "mods": {
+        "air_control_pct": 8
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 34007,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Anti-Air Cloak",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_damage_taken_pct",
+        "value": -8
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 34008,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Wing Breaker",
+      "minLevel": 1,
+      "mods": {
+        "air_dash_distance_pct": 8
+      },
+      "tradeoffs": {
+        "air_dash_sta_cost_flat": 5
+      }
+    },
+    {
+      "id": 34009,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Air Feint",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_feint",
+        "staCost": 10
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 34010,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Sky Seal",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_dash_deny_on_read",
+        "cooldownSec": 30
+      },
+      "tradeoffs": {
+        "STR_pct": -3
+      }
+    },
+    {
+      "id": 34011,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Float Cancel",
+      "minLevel": 1,
+      "ability": {
+        "tag": "landing_cancel",
+        "staCost": 12
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 34012,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Cloud Step",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_step",
+        "charges": 1,
+        "staCost": 20,
+        "cooldownSec": 16
+      },
+      "tradeoffs": {
+        "sta_regen_pct": -2
+      }
+    },
+    {
+      "id": 34013,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Drift Cape",
+      "minLevel": 1,
+      "mods": {
+        "air_drift_pct": 10
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 34014,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Wind Guard",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_chip_damage_taken_pct",
+        "value": -10
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 34015,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Jet Burst",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_burst",
+        "staCost": 18,
+        "cooldownSec": 20
+      },
+      "tradeoffs": {
+        "DEF_pct": -3
+      }
+    },
+    {
+      "id": 34016,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Slow Fall",
+      "minLevel": 1,
+      "ability": {
+        "tag": "slow_fall",
+        "durationSec": 3
+      },
+      "tradeoffs": {
+        "STR_pct": -2
+      }
+    },
+    {
+      "id": 34017,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Air Counter",
+      "minLevel": 1,
+      "ability": {
+        "tag": "air_counter",
+        "staCost": 12
+      },
+      "tradeoffs": {
+        "whiff_penalty": 1
+      }
+    },
+    {
+      "id": 34018,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Flight Cape",
+      "minLevel": 50,
+      "ability": {
+        "tag": "flight",
+        "durationSec": 4,
+        "staCost": 35,
+        "cooldownSec": 60
+      },
+      "tradeoffs": {
+        "cannot_block_while_active": 1
+      }
+    },
+    {
+      "id": 34019,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Phantom Cape",
+      "minLevel": 1,
+      "ability": {
+        "tag": "intent_mask",
+        "durationSec": 2,
+        "staCost": 20,
+        "cooldownSec": 35
+      },
+      "tradeoffs": {
+        "DEF_pct": -2
+      }
+    },
+    {
+      "id": 34020,
+      "type": "OUTFIT",
+      "tier": "ANY",
+      "slot": "CAPE",
+      "name": "Duel Cape",
+      "minLevel": 1,
+      "mods": {
+        "air_mobility_pct": 6,
+        "ground_mobility_pct": 4
+      },
+      "tradeoffs": {
+        "DEF_pct": -4
+      }
+    }
+  ]
+}
