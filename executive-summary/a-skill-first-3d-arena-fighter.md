@@ -1,15 +1,41 @@
 # A skill-first 3D arena fighter
 
-Masked Wrestlers is built for players who love “the mind game”:
+Masked Wrestlers is designed as a **skill-first 3D arena fighter** where your fundamentals matter:
+- movement and spacing
+- timing and punishes
+- stamina/resource decisions
+- reads and adaptation
 
-- **Spacing and footwork** matter.
-- **Reads and counterplay** exist for every tool.
-- **Stamina** is a real resource: aggression has costs.
+---
 
-## Why 3D arena?
+## What “skill-first” means
+### Skill decides outcomes
+- Your wins come from decisions and execution
+- You can’t shortcut mastery with purchases
 
-3D arenas create more decision branches (angles, turn rate, tracking, positioning). The design goal is to keep those branches competitive by enforcing:
+### Customization supports style, not dominance
+- Loadouts offer choices that reinforce playstyles
+- Advantages are bounded through caps and tradeoffs
 
-- tight movement caps,
-- clear tells on strong tools,
-- cooldown and stamina costs for mobility spikes.
+### Ranked integrity is protected
+- Rules are structured so ladder results remain meaningful
+- Anti-exploit protections prevent “market tricks” from affecting competitive play
+
+---
+
+## Playstyles you can own (and actually master)
+The system is designed to support multiple styles:
+- Pressure (tempo, forcing errors)
+- Control (spacing, punishing overcommitments)
+- Defense (survive, reset, counter)
+- Aerial/mixups (movement and timing traps)
+
+
+---
+
+## The result
+A competitive game where:
+- practice matters
+- wins feel earned
+- identity is deep
+- and ranked stays legitimate as the ecosystem grows
