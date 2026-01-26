@@ -42,8 +42,8 @@ Winning and playing earns XP that turns into:
 ### 3) Loadout progression
 Your build is:
 - **1 Mask**
-- optional **Mask Accessories** (Trait / Moves / Power slots)
-- optional **Ring Gear** (boots / tights / top / cape)
+- **Mask Accessories** (skills/modifiers)
+- **Ring Gear** (boots / tights / top / cape)
 
 As you progress, you gain access to more **choices**—but ranked remains fair because:
 - bonuses are capped
