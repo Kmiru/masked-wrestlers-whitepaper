@@ -20,7 +20,7 @@
 3. [Market overview](market-overview/README.md)
    - [Competitive fighting games](market-overview/competitive-fighting-games.md)
    - [Web3 gaming and ownership](market-overview/web3-gaming-and-ownership.md)
-   - [The NFT market](market-overview/The-NFT-market.md)
+   - [The NFT market](market-overview/the-nft-market.md)
    - [Market opportunity](market-overview/market-opportunity.md)
 
 4. [Roadmap](roadmap.md)
