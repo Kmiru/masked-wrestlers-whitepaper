@@ -30,3 +30,4 @@ node scripts/hash-catalog.mjs data/catalog.v1.json
 
 ## GitHub UI settings (recommended)
 See `docs/repo-hardening.md` for branch protection and security toggle guidance.
+
