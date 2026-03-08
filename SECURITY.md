@@ -3,7 +3,7 @@
 ## Reporting a vulnerability
 If you believe you found a security issue, **do not** open a public GitHub Issue.
 
-Please email: **security@YOUR-DOMAIN.com** (replace with your address)
+Please email: **security@maskedwrestlers.com**
 - Subject: `Masked Wrestlers Security Report`
 - Include: steps to reproduce, affected files/paths, potential impact, and any proof-of-concept.
 
