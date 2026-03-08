@@ -1,0 +1,31 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate catalog (JSON invariants + hash)
+        run: node scripts/validate-catalog.mjs
+
+      - name: Check markdown for unsafe HTML (XSS guard)
+        run: node scripts/check-markdown-xss.mjs
+
+      - name: Check internal markdown links (no broken docs)
+        run: node scripts/check-markdown-links.mjs
+
+      - name: Markdown lint (optional)
+        run: npx -y markdownlint-cli2 "**/*.md" || true
