@@ -1,0 +1,16 @@
+# CODEOWNERS — require review for critical surfaces
+# Replace @Kmiru with your GitHub username/team handle.
+
+*                       @Kmiru
+
+/.github/               @Kmiru
+/.github/workflows/     @Kmiru
+/scripts/               @Kmiru
+
+/data/                  @Kmiru
+/docs/                  @Kmiru
+
+/index.html             @Kmiru
+/styles.css             @Kmiru
+/app.js                 @Kmiru
+/roadmap.json           @Kmiru
