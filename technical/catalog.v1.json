@@ -33,13 +33,13 @@
       32000,
       32999
     ],
-    "outfit_shirt": [
-      33000,
-      33999
-    ],
     "outfit_cape": [
       34000,
       34999
+    ],
+    "outfit_top": [
+      33000,
+      33999
     ]
   },
   "items": [
@@ -707,7 +707,7 @@
       "ability": {
         "tag": "dot",
         "durationSec": 6,
-        "valuePctPerSec": 1.0
+        "valuePctPerSec": 1
       },
       "cooldowns": {
         "stamina": 30
@@ -1491,7 +1491,7 @@
       "id": 33001,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Guard Shirt",
       "minLevel": 1,
       "ability": {
@@ -1506,7 +1506,7 @@
       "id": 33002,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Stagger Shirt",
       "minLevel": 1,
       "ability": {
@@ -1521,7 +1521,7 @@
       "id": 33003,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Pressure Shirt",
       "minLevel": 1,
       "ability": {
@@ -1536,7 +1536,7 @@
       "id": 33004,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Recovery Shirt",
       "minLevel": 1,
       "ability": {
@@ -1551,7 +1551,7 @@
       "id": 33005,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Fortified Tee",
       "minLevel": 1,
       "mods": {
@@ -1565,7 +1565,7 @@
       "id": 33006,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Anti-Burst",
       "minLevel": 1,
       "ability": {
@@ -1580,7 +1580,7 @@
       "id": 33007,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Grapple Padding",
       "minLevel": 1,
       "ability": {
@@ -1595,7 +1595,7 @@
       "id": 33008,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Stoic",
       "minLevel": 1,
       "ability": {
@@ -1610,7 +1610,7 @@
       "id": 33009,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Guard Break Resist",
       "minLevel": 1,
       "ability": {
@@ -1625,7 +1625,7 @@
       "id": 33010,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Calm Breath",
       "minLevel": 1,
       "ability": {
@@ -1641,7 +1641,7 @@
       "id": 33011,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Chip Convert",
       "minLevel": 1,
       "ability": {
@@ -1656,7 +1656,7 @@
       "id": 33012,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Pain Tolerance",
       "minLevel": 1,
       "ability": {
@@ -1671,7 +1671,7 @@
       "id": 33013,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Anti-Air Plate",
       "minLevel": 1,
       "ability": {
@@ -1686,7 +1686,7 @@
       "id": 33014,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Frame Stable",
       "minLevel": 1,
       "ability": {
@@ -1701,7 +1701,7 @@
       "id": 33015,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Cleanse Cloth",
       "minLevel": 1,
       "ability": {
@@ -1716,7 +1716,7 @@
       "id": 33016,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Heavy Weave",
       "minLevel": 1,
       "mods": {
@@ -1730,7 +1730,7 @@
       "id": 33017,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Counter Guard",
       "minLevel": 1,
       "ability": {
@@ -1746,7 +1746,7 @@
       "id": 33018,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Stamina Shield",
       "minLevel": 1,
       "ability": {
@@ -1761,7 +1761,7 @@
       "id": 33019,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Tempo Armor",
       "minLevel": 1,
       "ability": {
@@ -1776,7 +1776,7 @@
       "id": 33020,
       "type": "OUTFIT",
       "tier": "ANY",
-      "slot": "SHIRT",
+      "slot": "TOP",
       "name": "Duel Shirt",
       "minLevel": 1,
       "mods": {

@@ -8,13 +8,13 @@
    - [Tomorrow: the future of Masked Wrestlers](executive-summary/tomorrow-the-future-of-masked-wrestlers.md)
 
 2. [The Masked Wrestlers ecosystem](the-masked-wrestlers-ecosystem/README.md)
-   - [Platform](the-masked-wrestlers-ecosystem/Platform.md)
+   - [Platform](the-masked-wrestlers-ecosystem/platform.md)
    - [Arena world](the-masked-wrestlers-ecosystem/arena-world.md)
    - [Marketplace and assets](the-masked-wrestlers-ecosystem/marketplace-and-assets.md)
-   - [Website](the-masked-wrestlers-ecosystem/Website.md)
-   - [Masks](the-masked-wrestlers-ecosystem/Masks.md)
+   - [Website](the-masked-wrestlers-ecosystem/website.md)
+   - [Masks](the-masked-wrestlers-ecosystem/masks.md)
    - [Mask Accessories](the-masked-wrestlers-ecosystem/mask-accessories.md)
-   - [Gamification](the-masked-wrestlers-ecosystem/Gamification.md)
+   - [Gamification](the-masked-wrestlers-ecosystem/gamification.md)
    - [Smart contract architecture](the-masked-wrestlers-ecosystem/smart-contract-architecture.md)
 
 3. [Market overview](market-overview/README.md)
@@ -31,8 +31,8 @@
    - [Optional utility token](tokenomics/optional-utility-token.md)
 
 6. [Team and partners](team-and-partners/README.md)
-   - [Team](team-and-partners/Team.md)
-   - [Partners](team-and-partners/Partners.md)
+   - [Team](team-and-partners/team.md)
+   - [Partners](team-and-partners/partners.md)
 
 7. [Disclaimer](disclaimer.md)
 
