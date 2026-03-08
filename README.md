@@ -68,3 +68,4 @@ Start with **Executive Summary** for the quickest understanding.
 > Draft v1.0 — January 21, 2026
 
 **Next:** [Table of contents](table-of-contents.md)
+test
